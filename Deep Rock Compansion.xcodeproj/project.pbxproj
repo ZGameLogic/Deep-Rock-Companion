@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B552420128F8EE0600141B70 /* VoiceLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420028F8EE0600141B70 /* VoiceLinesView.swift */; };
+		B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420228F9A0B600141B70 /* MusicTracksView.swift */; };
 		B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */; };
 		B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778D28F8DD3700867ABB /* ContentView.swift */; };
 		B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9778F28F8DD3900867ABB /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B552420028F8EE0600141B70 /* VoiceLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceLinesView.swift; sourceTree = "<group>"; };
+		B552420228F9A0B600141B70 /* MusicTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTracksView.swift; sourceTree = "<group>"; };
 		B5C9778828F8DD3700867ABB /* Deep Rock Compansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deep Rock Compansion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deep_Rock_CompansionApp.swift; sourceTree = "<group>"; };
 		B5C9778D28F8DD3700867ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B55241FF28F8EDF400141B70 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B552420028F8EE0600141B70 /* VoiceLinesView.swift */,
+				B552420228F9A0B600141B70 /* MusicTracksView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		B5C9777F28F8DD3700867ABB = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +64,7 @@
 		B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */ = {
 			isa = PBXGroup;
 			children = (
+				B55241FF28F8EDF400141B70 /* views */,
 				B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */,
 				B5C9778D28F8DD3700867ABB /* ContentView.swift */,
 				B5C9778F28F8DD3900867ABB /* Assets.xcassets */,
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */,
 				B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */,
+				B552420128F8EE0600141B70 /* VoiceLinesView.swift in Sources */,
 				B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
