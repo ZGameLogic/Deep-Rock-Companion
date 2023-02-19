@@ -9,13 +9,14 @@ import SwiftUI
 
 struct VoiceLinesView: View {
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]) {
-                ForEach(1..<100) { i in
-                    Text("\(i)").padding()
-                }
-            }
-        }
+//        ScrollView {
+//            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]) {
+//                ForEach(1..<100) { i in
+//                    Text("\(i)").padding()
+//                }
+//            }
+//        }
+        Text("Coming soon")
     }
 }
 

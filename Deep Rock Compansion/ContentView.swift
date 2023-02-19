@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            MusicTracksView(selectedType: "pregame", specialType: "swarm").padding()
+                .tabItem({
+                    Label("Music Tracks", systemImage: "music.note.list")
+                }).tag(1)
             VoiceLinesView().padding()
                 .tabItem({
                     Label("Voice Lines", systemImage: "mic")
-                }).tag(1)
-            MusicTracksView().padding()
-                .tabItem({
-                    Label("Music Tracks", systemImage: "music.note.list")
                 }).tag(2)
         }
     }

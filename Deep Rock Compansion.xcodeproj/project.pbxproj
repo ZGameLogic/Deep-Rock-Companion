@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B524D2122946397B0093F438 /* 20 A Matter of Skill and Ammunition.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FC2946396A0093F438 /* 20 A Matter of Skill and Ammunition.mp3 */; };
+		B524D2132946397B0093F438 /* 10 Horrors of Hoxxes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FD2946396B0093F438 /* 10 Horrors of Hoxxes.mp3 */; };
+		B524D2142946397B0093F438 /* 07 Petrified Fury.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FE2946396B0093F438 /* 07 Petrified Fury.mp3 */; };
+		B524D2152946397B0093F438 /* 21 The Only Way Out Is Through.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FF2946396D0093F438 /* 21 The Only Way Out Is Through.mp3 */; };
+		B524D2162946397B0093F438 /* 04 Hold My Beard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2002946396D0093F438 /* 04 Hold My Beard.mp3 */; };
+		B524D2172946397B0093F438 /* 17 March of the Brave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2012946396E0093F438 /* 17 March of the Brave.mp3 */; };
+		B524D2182946397B0093F438 /* 22 Ode to the Fallen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2022946396F0093F438 /* 22 Ode to the Fallen.mp3 */; };
+		B524D2192946397B0093F438 /* 14 Fighting the Shadows.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D203294639700093F438 /* 14 Fighting the Shadows.mp3 */; };
+		B524D21A2946397B0093F438 /* 18 Beneath the Crust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D204294639710093F438 /* 18 Beneath the Crust.mp3 */; };
+		B524D21B2946397B0093F438 /* 09 Robot Getaway.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D205294639710093F438 /* 09 Robot Getaway.mp3 */; };
+		B524D21C2946397B0093F438 /* 03 The Deep Dive.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D206294639720093F438 /* 03 The Deep Dive.mp3 */; };
+		B524D21D2946397B0093F438 /* 12 The Shadows are Moving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D207294639720093F438 /* 12 The Shadows are Moving.mp3 */; };
+		B524D21E2946397B0093F438 /* 05 They_re Here!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D208294639730093F438 /* 05 They_re Here!.mp3 */; };
+		B524D21F2946397B0093F438 /* 02 Attack of the Glyphids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D209294639730093F438 /* 02 Attack of the Glyphids.mp3 */; };
+		B524D2202946397B0093F438 /* 08 The Descent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20A294639740093F438 /* 08 The Descent.mp3 */; };
+		B524D2212946397B0093F438 /* 19 Karl_s End.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20B294639750093F438 /* 19 Karl_s End.mp3 */; };
+		B524D2222946397B0093F438 /* 01 Into The Abyss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20C294639760093F438 /* 01 Into The Abyss.mp3 */; };
+		B524D2232946397B0093F438 /* 06 Cowards Crossing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20D294639770093F438 /* 06 Cowards Crossing.mp3 */; };
+		B524D2242946397B0093F438 /* 11 Principle of Darkness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20E294639780093F438 /* 11 Principle of Darkness.mp3 */; };
+		B524D2252946397B0093F438 /* 13 I am Lost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20F294639790093F438 /* 13 I am Lost.mp3 */; };
+		B524D2262946397B0093F438 /* 15 Fathomless Tomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2102946397A0093F438 /* 15 Fathomless Tomb.mp3 */; };
+		B524D2272946397B0093F438 /* 16 Leave No Dwarf Behind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2112946397B0093F438 /* 16 Leave No Dwarf Behind.mp3 */; };
 		B552420128F8EE0600141B70 /* VoiceLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420028F8EE0600141B70 /* VoiceLinesView.swift */; };
 		B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420228F9A0B600141B70 /* MusicTracksView.swift */; };
 		B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */; };
@@ -16,6 +38,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B524D1FC2946396A0093F438 /* 20 A Matter of Skill and Ammunition.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "20 A Matter of Skill and Ammunition.mp3"; sourceTree = "<group>"; };
+		B524D1FD2946396B0093F438 /* 10 Horrors of Hoxxes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 Horrors of Hoxxes.mp3"; sourceTree = "<group>"; };
+		B524D1FE2946396B0093F438 /* 07 Petrified Fury.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 Petrified Fury.mp3"; sourceTree = "<group>"; };
+		B524D1FF2946396D0093F438 /* 21 The Only Way Out Is Through.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "21 The Only Way Out Is Through.mp3"; sourceTree = "<group>"; };
+		B524D2002946396D0093F438 /* 04 Hold My Beard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 Hold My Beard.mp3"; sourceTree = "<group>"; };
+		B524D2012946396E0093F438 /* 17 March of the Brave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "17 March of the Brave.mp3"; sourceTree = "<group>"; };
+		B524D2022946396F0093F438 /* 22 Ode to the Fallen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "22 Ode to the Fallen.mp3"; sourceTree = "<group>"; };
+		B524D203294639700093F438 /* 14 Fighting the Shadows.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 Fighting the Shadows.mp3"; sourceTree = "<group>"; };
+		B524D204294639710093F438 /* 18 Beneath the Crust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "18 Beneath the Crust.mp3"; sourceTree = "<group>"; };
+		B524D205294639710093F438 /* 09 Robot Getaway.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 Robot Getaway.mp3"; sourceTree = "<group>"; };
+		B524D206294639720093F438 /* 03 The Deep Dive.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 The Deep Dive.mp3"; sourceTree = "<group>"; };
+		B524D207294639720093F438 /* 12 The Shadows are Moving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 The Shadows are Moving.mp3"; sourceTree = "<group>"; };
+		B524D208294639730093F438 /* 05 They_re Here!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 They_re Here!.mp3"; sourceTree = "<group>"; };
+		B524D209294639730093F438 /* 02 Attack of the Glyphids.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Attack of the Glyphids.mp3"; sourceTree = "<group>"; };
+		B524D20A294639740093F438 /* 08 The Descent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 The Descent.mp3"; sourceTree = "<group>"; };
+		B524D20B294639750093F438 /* 19 Karl_s End.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "19 Karl_s End.mp3"; sourceTree = "<group>"; };
+		B524D20C294639760093F438 /* 01 Into The Abyss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Into The Abyss.mp3"; sourceTree = "<group>"; };
+		B524D20D294639770093F438 /* 06 Cowards Crossing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Cowards Crossing.mp3"; sourceTree = "<group>"; };
+		B524D20E294639780093F438 /* 11 Principle of Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 Principle of Darkness.mp3"; sourceTree = "<group>"; };
+		B524D20F294639790093F438 /* 13 I am Lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 I am Lost.mp3"; sourceTree = "<group>"; };
+		B524D2102946397A0093F438 /* 15 Fathomless Tomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 Fathomless Tomb.mp3"; sourceTree = "<group>"; };
+		B524D2112946397B0093F438 /* 16 Leave No Dwarf Behind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16 Leave No Dwarf Behind.mp3"; sourceTree = "<group>"; };
 		B552420028F8EE0600141B70 /* VoiceLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceLinesView.swift; sourceTree = "<group>"; };
 		B552420228F9A0B600141B70 /* MusicTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTracksView.swift; sourceTree = "<group>"; };
 		B5C9778828F8DD3700867ABB /* Deep Rock Compansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deep Rock Compansion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +80,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B524D1FB2946394C0093F438 /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				B524D20C294639760093F438 /* 01 Into The Abyss.mp3 */,
+				B524D209294639730093F438 /* 02 Attack of the Glyphids.mp3 */,
+				B524D206294639720093F438 /* 03 The Deep Dive.mp3 */,
+				B524D2002946396D0093F438 /* 04 Hold My Beard.mp3 */,
+				B524D208294639730093F438 /* 05 They_re Here!.mp3 */,
+				B524D20D294639770093F438 /* 06 Cowards Crossing.mp3 */,
+				B524D1FE2946396B0093F438 /* 07 Petrified Fury.mp3 */,
+				B524D20A294639740093F438 /* 08 The Descent.mp3 */,
+				B524D205294639710093F438 /* 09 Robot Getaway.mp3 */,
+				B524D1FD2946396B0093F438 /* 10 Horrors of Hoxxes.mp3 */,
+				B524D20E294639780093F438 /* 11 Principle of Darkness.mp3 */,
+				B524D207294639720093F438 /* 12 The Shadows are Moving.mp3 */,
+				B524D20F294639790093F438 /* 13 I am Lost.mp3 */,
+				B524D203294639700093F438 /* 14 Fighting the Shadows.mp3 */,
+				B524D2102946397A0093F438 /* 15 Fathomless Tomb.mp3 */,
+				B524D2112946397B0093F438 /* 16 Leave No Dwarf Behind.mp3 */,
+				B524D2012946396E0093F438 /* 17 March of the Brave.mp3 */,
+				B524D204294639710093F438 /* 18 Beneath the Crust.mp3 */,
+				B524D20B294639750093F438 /* 19 Karl_s End.mp3 */,
+				B524D1FC2946396A0093F438 /* 20 A Matter of Skill and Ammunition.mp3 */,
+				B524D1FF2946396D0093F438 /* 21 The Only Way Out Is Through.mp3 */,
+				B524D2022946396F0093F438 /* 22 Ode to the Fallen.mp3 */,
+			);
+			path = songs;
+			sourceTree = "<group>";
+		};
 		B55241FF28F8EDF400141B70 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +137,7 @@
 		B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */ = {
 			isa = PBXGroup;
 			children = (
+				B524D1FB2946394C0093F438 /* songs */,
 				B55241FF28F8EDF400141B70 /* views */,
 				B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */,
 				B5C9778D28F8DD3700867ABB /* ContentView.swift */,
@@ -139,8 +213,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B524D2172946397B0093F438 /* 17 March of the Brave.mp3 in Resources */,
 				B5C9779328F8DD3900867ABB /* Preview Assets.xcassets in Resources */,
+				B524D2142946397B0093F438 /* 07 Petrified Fury.mp3 in Resources */,
+				B524D2152946397B0093F438 /* 21 The Only Way Out Is Through.mp3 in Resources */,
 				B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */,
+				B524D2222946397B0093F438 /* 01 Into The Abyss.mp3 in Resources */,
+				B524D2262946397B0093F438 /* 15 Fathomless Tomb.mp3 in Resources */,
+				B524D2132946397B0093F438 /* 10 Horrors of Hoxxes.mp3 in Resources */,
+				B524D2162946397B0093F438 /* 04 Hold My Beard.mp3 in Resources */,
+				B524D2272946397B0093F438 /* 16 Leave No Dwarf Behind.mp3 in Resources */,
+				B524D21C2946397B0093F438 /* 03 The Deep Dive.mp3 in Resources */,
+				B524D2182946397B0093F438 /* 22 Ode to the Fallen.mp3 in Resources */,
+				B524D2232946397B0093F438 /* 06 Cowards Crossing.mp3 in Resources */,
+				B524D2192946397B0093F438 /* 14 Fighting the Shadows.mp3 in Resources */,
+				B524D2212946397B0093F438 /* 19 Karl_s End.mp3 in Resources */,
+				B524D21A2946397B0093F438 /* 18 Beneath the Crust.mp3 in Resources */,
+				B524D2122946397B0093F438 /* 20 A Matter of Skill and Ammunition.mp3 in Resources */,
+				B524D21D2946397B0093F438 /* 12 The Shadows are Moving.mp3 in Resources */,
+				B524D2202946397B0093F438 /* 08 The Descent.mp3 in Resources */,
+				B524D21B2946397B0093F438 /* 09 Robot Getaway.mp3 in Resources */,
+				B524D21E2946397B0093F438 /* 05 They_re Here!.mp3 in Resources */,
+				B524D2252946397B0093F438 /* 13 I am Lost.mp3 in Resources */,
+				B524D21F2946397B0093F438 /* 02 Attack of the Glyphids.mp3 in Resources */,
+				B524D2242946397B0093F438 /* 11 Principle of Darkness.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
