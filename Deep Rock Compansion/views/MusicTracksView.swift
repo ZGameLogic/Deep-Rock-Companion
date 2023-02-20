@@ -10,9 +10,12 @@ import AVKit
 
 struct MusicTracksView: View {
     
+    let songMap = SongMap()
+    
     @State var audioPlayer: AVAudioPlayer!
     @State var selectedType: String
     @State var specialType: String
+    @State var nowPlaying = ""
     
     @State var playing = false
     
@@ -24,6 +27,8 @@ struct MusicTracksView: View {
                     Text("Pre-game").tag("pregame")
                     Text("Ambiance").tag("ambiance")
                     Text("Extraction").tag("extraction")
+                    Text("Post-game").tag("postgame")
+                    Text("Failed").tag("failed")
                     Text("Events").tag("events")
                 }.onChange(of: selectedType, perform: {newValue in
                     changeSong()
@@ -37,31 +42,33 @@ struct MusicTracksView: View {
                 }).pickerStyle(.segmented)
                     .disabled(selectedType != "events")
                 Spacer()
-                HStack {
-                    if(!playing){
-                        Button(action: {
-                            play()
-                        }) {
-                            Image(systemName: "play.circle.fill").resizable()
-                                .frame(width: 50, height: 50)
-                                .aspectRatio(contentMode: .fit)
-                        }
-                    } else {
-                        Button(action: {
-                            pause()
-                        }) {
-                            Image(systemName: "pause.circle.fill").resizable()
-                                .frame(width: 50, height: 50)
-                                .aspectRatio(contentMode: .fit)
-                        }
+                if(!playing){
+                    Button(action: {
+                        play()
+                    }) {
+                        Image(systemName: "play.circle.fill").resizable()
+                            .frame(width: 50, height: 50)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                } else {
+                    Button(action: {
+                        pause()
+                    }) {
+                        Image(systemName: "pause.circle.fill").resizable()
+                            .frame(width: 50, height: 50)
+                            .aspectRatio(contentMode: .fit)
                     }
                 }
+                Spacer()
+                Text(nowPlaying)
                 Spacer()
             }
         }
         .onAppear {
-            let sound = Bundle.main.path(forResource: "01 Into The Abyss", ofType: "mp3")
+            nowPlaying = "Into The Abyss"
+            let sound = Bundle.main.path(forResource: "Into The Abyss", ofType: "mp3")
             self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            audioPlayer.numberOfLoops = 100000
         }
     }
     
@@ -80,7 +87,17 @@ struct MusicTracksView: View {
         if(selectedType == "events"){
             selection += ".\(specialType)"
         }
-        print(selection)
+        let song = songMap.getSong(songType: selection)
+        let sound = Bundle.main.path(forResource: song.file, ofType: "mp3")
+        if(playing){
+            audioPlayer.stop()
+        }
+        self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        audioPlayer.numberOfLoops = 100000
+        nowPlaying = song.file
+        if(playing){
+            audioPlayer.play()
+        }
     }
 }
 
