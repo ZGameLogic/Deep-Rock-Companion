@@ -13,8 +13,9 @@ struct MusicTracksView: View {
     let songMap = SongMap()
     
     @State var audioPlayer: AVAudioPlayer!
-    @State var selectedType: String
-    @State var specialType: String
+    @State var selectedType = "game"
+    @State var specialType = "swarm"
+    @State var gameType = "pregame"
     @State var nowPlaying = ""
     
     @State var playing = false
@@ -24,15 +25,22 @@ struct MusicTracksView: View {
             VStack {
                 Text("Mission status")
                 Picker("Mission status type", selection: $selectedType) {
-                    Text("Pre-game").tag("pregame")
-                    Text("Ambiance").tag("ambiance")
-                    Text("Extraction").tag("extraction")
-                    Text("Post-game").tag("postgame")
-                    Text("Failed").tag("failed")
+                    Text("Game").tag("game")
                     Text("Events").tag("events")
                 }.onChange(of: selectedType, perform: {newValue in
                     changeSong()
                 }).pickerStyle(.segmented)
+                Text("Select game state")
+                Picker("Game state", selection: $gameType) {
+                    Text("Pre").tag("pregame")
+                    Text("In").tag("ambiance")
+                    Text("Post").tag("postgame")
+                    Text("Extract").tag("extraction")
+                    Text("Failed").tag("failed")
+                }.onChange(of: gameType, perform: {newValue in
+                    changeSong()
+                }).pickerStyle(.segmented)
+                    .disabled(selectedType != "game")
                 Text("Select event type")
                 Picker("Special type", selection: $specialType) {
                     Text("Swarm").tag("swarm")
@@ -42,33 +50,36 @@ struct MusicTracksView: View {
                 }).pickerStyle(.segmented)
                     .disabled(selectedType != "events")
                 Spacer()
-                if(!playing){
-                    Button(action: {
-                        play()
-                    }) {
-                        Image(systemName: "play.circle.fill").resizable()
-                            .frame(width: 50, height: 50)
-                            .aspectRatio(contentMode: .fit)
+                Group {
+                    if(!playing){
+                        Button(action: {
+                            play()
+                        }) {
+                            Image(systemName: "play.circle.fill").resizable()
+                                .frame(width: 50, height: 50)
+                                .aspectRatio(contentMode: .fit)
+                        }
+                    } else {
+                        Button(action: {
+                            pause()
+                        }) {
+                            Image(systemName: "pause.circle.fill").resizable()
+                                .frame(width: 50, height: 50)
+                                .aspectRatio(contentMode: .fit)
+                        }
                     }
-                } else {
-                    Button(action: {
-                        pause()
-                    }) {
-                        Image(systemName: "pause.circle.fill").resizable()
-                            .frame(width: 50, height: 50)
-                            .aspectRatio(contentMode: .fit)
-                    }
+                    Spacer()
+                    Text(nowPlaying)
+                    Spacer()
                 }
-                Spacer()
-                Text(nowPlaying)
-                Spacer()
             }
         }
         .onAppear {
-            nowPlaying = "Into The Abyss"
-            let sound = Bundle.main.path(forResource: "Into The Abyss", ofType: "mp3")
-            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-            audioPlayer.numberOfLoops = 100000
+            changeSong()
+//            nowPlaying = "Into The Abyss"
+//            let sound = Bundle.main.path(forResource: "Into The Abyss", ofType: "mp3")
+//            audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+//            audioPlayer.numberOfLoops = 100000
         }
     }
     
@@ -85,7 +96,9 @@ struct MusicTracksView: View {
     func changeSong(){
         var selection = selectedType
         if(selectedType == "events"){
-            selection += ".\(specialType)"
+            selection = specialType
+        } else {
+            selection = gameType
         }
         let song = songMap.getSong(songType: selection)
         let sound = Bundle.main.path(forResource: song.file, ofType: "mp3")
@@ -103,6 +116,6 @@ struct MusicTracksView: View {
 
 struct MusicTracksView_Previews: PreviewProvider {
     static var previews: some View {
-        MusicTracksView( selectedType: "pregame", specialType: "swarm")
+        MusicTracksView()
     }
 }
