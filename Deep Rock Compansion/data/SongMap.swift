@@ -17,7 +17,7 @@ struct SongMap {
             Song(file: "Into the Abyss", type: "ambience"),
             Song(file: "Attack of the Glyphids", type: "swarm"),
             Song(file: "The Deep Dive", type: "pregame"),
-            Song(file: "Hold my Beard", type: "swarm"),
+            Song(file: "Hold My Beard", type: "swarm"),
             Song(file: "Theyre Here", type: "swarm"),
             Song(file: "Cowards Crossing", type: "ambience"),
             Song(file: "Petrified Fury", type: "swarm"),

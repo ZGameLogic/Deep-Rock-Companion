@@ -105,6 +105,7 @@ struct MusicTracksView: View {
         if(playing){
             audioPlayer.stop()
         }
+        print(song.file)
         self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         audioPlayer.numberOfLoops = 100000
         nowPlaying = song.file
