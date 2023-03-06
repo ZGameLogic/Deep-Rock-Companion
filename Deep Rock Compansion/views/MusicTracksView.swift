@@ -17,70 +17,108 @@ struct MusicTracksView: View {
     @State var specialType = "swarm"
     @State var gameType = "pregame"
     @State var nowPlaying = ""
+    @State var volume: Float = 1.0
     
     @State var playing = false
     
     var body: some View {
         ZStack {
             VStack {
-                Text("Mission status")
-                Picker("Mission status type", selection: $selectedType) {
-                    Text("Game").tag("game")
-                    Text("Events").tag("events")
-                }.onChange(of: selectedType, perform: {newValue in
-                    changeSong()
-                }).pickerStyle(.segmented)
-                Text("Select game state")
-                Picker("Game state", selection: $gameType) {
-                    Text("Pre").tag("pregame")
-                    Text("In").tag("ambiance")
-                    Text("Post").tag("postgame")
-                    Text("Extract").tag("extraction")
-                    Text("Failed").tag("failed")
-                }.onChange(of: gameType, perform: {newValue in
-                    changeSong()
-                }).pickerStyle(.segmented)
-                    .disabled(selectedType != "game")
-                Text("Select event type")
-                Picker("Special type", selection: $specialType) {
-                    Text("Swarm").tag("swarm")
-                    Text("Opressor").tag("oppressor")
-                }.onChange(of: specialType, perform: {newValue in
-                    changeSong()
-                }).pickerStyle(.segmented)
-                    .disabled(selectedType != "events")
+                Group {
+                    Text("Mission status")
+                    Picker("Mission status type", selection: $selectedType) {
+                        Text("Game").tag("game")
+                        Text("Events").tag("events")
+                    }.onChange(of: selectedType, perform: {newValue in
+                        changeSong()
+                    }).pickerStyle(.segmented)
+                    Text("Select game state")
+                    Picker("Game state", selection: $gameType) {
+                        Text("Pre").tag("pregame")
+                        Text("In").tag("ambiance")
+                        Text("Post").tag("postgame")
+                        Text("Extract").tag("extraction")
+                        Text("Failed").tag("failed")
+                    }.onChange(of: gameType, perform: {newValue in
+                        changeSong()
+                    }).pickerStyle(.segmented)
+                        .disabled(selectedType != "game")
+                    Text("Select event type")
+                    Picker("Special type", selection: $specialType) {
+                        Text("Swarm").tag("swarm")
+                        Text("Opressor").tag("oppressor")
+                    }.onChange(of: specialType, perform: {newValue in
+                        changeSong()
+                    }).pickerStyle(.segmented)
+                        .disabled(selectedType != "events")
+                }
                 Spacer()
                 Group {
-                    if(!playing){
+                    Text("Now playing")
+                    Text(nowPlaying).font(.headline)
+                
+                    HStack {
                         Button(action: {
-                            play()
+                            scroll(amount: -1)
                         }) {
-                            Image(systemName: "play.circle.fill").resizable()
+                            Image(systemName: "backward.circle.fill").resizable()
                                 .frame(width: 50, height: 50)
                                 .aspectRatio(contentMode: .fit)
                         }
-                    } else {
+                        if(!playing){
+                            Button(action: {
+                                play()
+                            }) {
+                                Image(systemName: "play.circle.fill").resizable()
+                                    .frame(width: 50, height: 50)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                        } else {
+                            Button(action: {
+                                pause()
+                            }) {
+                                Image(systemName: "pause.circle.fill").resizable()
+                                    .frame(width: 50, height: 50)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                        }
                         Button(action: {
-                            pause()
+                            scroll(amount: 1)
                         }) {
-                            Image(systemName: "pause.circle.fill").resizable()
+                            Image(systemName: "forward.circle.fill").resizable()
                                 .frame(width: 50, height: 50)
                                 .aspectRatio(contentMode: .fit)
                         }
-                    }
-                    Spacer()
-                    Text(nowPlaying)
+                    }.padding(20)
+                    Slider(
+                        value: $volume,
+                        in: 0...1.0,
+                        label: {
+                            Text("Volume")
+                        }
+                    ).onChange(of: volume, perform: { volume in
+                        changeVolume()
+                    })
                     Spacer()
                 }
             }
         }
         .onAppear {
-            changeSong()
-//            nowPlaying = "Into The Abyss"
-//            let sound = Bundle.main.path(forResource: "Into The Abyss", ofType: "mp3")
-//            audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-//            audioPlayer.numberOfLoops = 100000
+            if(!playing){
+                changeSong()
+            }
         }
+    }
+    
+    func changeVolume() {
+        audioPlayer.setVolume(volume, fadeDuration: 0.0)
+    }
+    
+    func scroll(amount: Int) {
+        let selection = getSelectedType()
+        let currentIndex = songMap.getIndex(songName: nowPlaying, songType: selection)
+        let newSong = songMap.scroll(currentIndex: currentIndex, scrollAmount: amount, songType: selection)
+        changeSong(song: newSong)
     }
     
     func play() {
@@ -93,14 +131,17 @@ struct MusicTracksView: View {
         audioPlayer.pause()
     }
     
-    func changeSong(){
+    func getSelectedType() -> String{
         var selection = selectedType
         if(selectedType == "events"){
             selection = specialType
         } else {
             selection = gameType
         }
-        let song = songMap.getSong(songType: selection)
+        return selection
+    }
+    
+    func changeSong(song: Song) {
         let sound = Bundle.main.path(forResource: song.file, ofType: "mp3")
         if(playing){
             audioPlayer.stop()
@@ -112,6 +153,12 @@ struct MusicTracksView: View {
         if(playing){
             audioPlayer.play()
         }
+    }
+    
+    func changeSong(){
+        let selection = getSelectedType()
+        let song = songMap.getSongByType(songType: selection)
+        changeSong(song: song)
     }
 }
 

@@ -38,7 +38,7 @@ struct SongMap {
             Song(file: "A Matter of Skill and Ammunition", type: "ambience"),
             Song(file: "The Only Way Out is Through", type: "ambience"),
             Song(file: "Ode to the Fallen", type: "failed"),
-            Song(file: "I Welcome the Darkness", type: "extraction"),
+            Song(file: "I Welcome The Darkness", type: "extraction"),
             Song(file: "A Distant Terror", type: "oppressor"),
             Song(file: "Follow Molly", type: "extraction"),
             Song(file: "Lets Go Deeper", type: "ambiance"),
@@ -57,16 +57,37 @@ struct SongMap {
         ]
     }
     
-    func getSong(songType: String) -> Song {
+    func scroll(currentIndex: Int, scrollAmount: Int, songType: String) -> Song {
+        let valid = getValidSongs(songType: songType)
+        var newIndex = currentIndex + scrollAmount
+        if(newIndex >= valid.count) {newIndex -= valid.count}
+        if(newIndex < 0) {newIndex += valid.count}
+        return valid[newIndex]
+    }
+    
+    func getIndex(songName: String, songType: String) -> Int {
+        let valid = getValidSongs(songType: songType)
+        
+        var index = 0;
+        for song in valid {
+            if(song.file == songName) {
+                return index
+            } else {
+                index += 1
+            }
+        }
+        return -1
+    }
+    
+    func getSongByType(songType: String) -> Song {
+        return getValidSongs(songType: songType).randomElement()!
+    }
+    
+    func getValidSongs(songType: String) -> [Song] {
         var valid:[Song] = []
         for song in songs {
             if(song.type == songType) {valid.append(song)}
         }
-        return valid.randomElement()!
-    }
-    
-    struct Song {
-        var file: String
-        var type: String
+        return valid;
     }
 }
