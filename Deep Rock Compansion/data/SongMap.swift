@@ -37,7 +37,23 @@ struct SongMap {
             Song(file: "Karls End", type: "ambiance"),
             Song(file: "A Matter of Skill and Ammunition", type: "ambience"),
             Song(file: "The Only Way Out is Through", type: "ambience"),
-            Song(file: "Ode to the Fallen", type: "failed")
+            Song(file: "Ode to the Fallen", type: "failed"),
+            Song(file: "I Welcome the Darkness", type: "extraction"),
+            Song(file: "A Distant Terror", type: "oppressor"),
+            Song(file: "Follow Molly", type: "extraction"),
+            Song(file: "Lets Go Deeper", type: "ambiance"),
+            Song(file: "Absolute Zero", type: "ambiance"),
+            Song(file: "Echoes From The Past", type: "pregame"),
+            Song(file: "Echoes From The Past", type: "ambiance"),
+            Song(file: "Dance of the Dreadnought", type: "oppressor"),
+            Song(file: "Dance of the Dreadnought", type: "swarm"),
+            Song(file: "Interstellar Nightmares", type: "oppressor"),
+            Song(file: "The Core Infuser", type: "swarm"),
+            Song(file: "Deceived by Light", type: "ambiance"),
+            Song(file: "In the Belly of the Beast", type: "swarm"),
+            Song(file: "The Last Ascent", type: "extraction"),
+            Song(file: "RUN", type: "swarm"),
+            Song(file: "Axes Out", type: "swarm")
         ]
     }
     
@@ -52,10 +68,5 @@ struct SongMap {
     struct Song {
         var file: String
         var type: String
-        
-        init(file: String, type: String){
-            self.file = file
-            self.type = type
-        }
     }
 }

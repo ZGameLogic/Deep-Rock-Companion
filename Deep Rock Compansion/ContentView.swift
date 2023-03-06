@@ -14,10 +14,10 @@ struct ContentView: View {
                 .tabItem({
                     Label("Music Tracks", systemImage: "music.note.list")
                 }).tag(1)
-//            VoiceLinesView().padding()
-//                .tabItem({
-//                    Label("Voice Lines", systemImage: "mic")
-//                }).tag(2)
+            MonstersView().padding()
+                .tabItem({
+                    Label("Monsterpedia", systemImage: "text.book.closed.fill")
+                }).tag(2)
         }
     }
 }
