@@ -32,6 +32,7 @@
 		B515198129B2D9A30074638E /* Principle of Darkness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */; };
 		B552420128F8EE0600141B70 /* VoiceLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420028F8EE0600141B70 /* VoiceLinesView.swift */; };
 		B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420228F9A0B600141B70 /* MusicTracksView.swift */; };
+		B589C63B29B5769700F81707 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B589C63A29B5769700F81707 /* .gitignore */; };
 		B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */; };
 		B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778D28F8DD3700867ABB /* ContentView.swift */; };
 		B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9778F28F8DD3900867ABB /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Principle of Darkness.mp3"; sourceTree = "<group>"; };
 		B552420028F8EE0600141B70 /* VoiceLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceLinesView.swift; sourceTree = "<group>"; };
 		B552420228F9A0B600141B70 /* MusicTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTracksView.swift; sourceTree = "<group>"; };
+		B589C63A29B5769700F81707 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B5C9778828F8DD3700867ABB /* Deep Rock Compansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deep Rock Compansion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deep_Rock_CompansionApp.swift; sourceTree = "<group>"; };
 		B5C9778D28F8DD3700867ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		B5C9777F28F8DD3700867ABB = {
 			isa = PBXGroup;
 			children = (
+				B589C63A29B5769700F81707 /* .gitignore */,
 				B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */,
 				B5C9778928F8DD3700867ABB /* Products */,
 			);
@@ -234,6 +237,7 @@
 				B515197B29B2D9A30074638E /* Into The Abyss.mp3 in Resources */,
 				B515196C29B2D9A30074638E /* The Deep Dive.mp3 in Resources */,
 				B515196E29B2D9A30074638E /* Leave No Dwarf Behind.mp3 in Resources */,
+				B589C63B29B5769700F81707 /* .gitignore in Resources */,
 				B515197329B2D9A30074638E /* A Matter of Skill and Ammunition.mp3 in Resources */,
 				B515197829B2D9A30074638E /* Petrified Fury.mp3 in Resources */,
 				B515197D29B2D9A30074638E /* Robot Getaway.mp3 in Resources */,
