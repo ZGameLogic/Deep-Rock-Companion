@@ -43,7 +43,7 @@
 		B589C65B29B5786200F81707 /* A Distant Terror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64D29B5786100F81707 /* A Distant Terror.mp3 */; };
 		B589C65C29B5786200F81707 /* The Last Ascent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64E29B5786100F81707 /* The Last Ascent.mp3 */; };
 		B589C65D29B5786200F81707 /* In the Belly of the Beast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64F29B5786100F81707 /* In the Belly of the Beast.mp3 */; };
-		B589C65E29B5786200F81707 /* Let_s Go Deeper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65029B5786100F81707 /* Let_s Go Deeper.mp3 */; };
+		B589C65E29B5786200F81707 /* Lets Go Deeper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65029B5786100F81707 /* Lets Go Deeper.mp3 */; };
 		B589C65F29B5786200F81707 /* RUN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65129B5786100F81707 /* RUN.mp3 */; };
 		B589C66029B5786200F81707 /* Echoes From The Past.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65229B5786100F81707 /* Echoes From The Past.mp3 */; };
 		B589C66129B5786200F81707 /* I Welcome The Darkness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65329B5786100F81707 /* I Welcome The Darkness.mp3 */; };
@@ -94,7 +94,7 @@
 		B589C64D29B5786100F81707 /* A Distant Terror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A Distant Terror.mp3"; sourceTree = "<group>"; };
 		B589C64E29B5786100F81707 /* The Last Ascent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Last Ascent.mp3"; sourceTree = "<group>"; };
 		B589C64F29B5786100F81707 /* In the Belly of the Beast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "In the Belly of the Beast.mp3"; sourceTree = "<group>"; };
-		B589C65029B5786100F81707 /* Let_s Go Deeper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Let_s Go Deeper.mp3"; sourceTree = "<group>"; };
+		B589C65029B5786100F81707 /* Lets Go Deeper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lets Go Deeper.mp3"; sourceTree = "<group>"; };
 		B589C65129B5786100F81707 /* RUN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RUN.mp3; sourceTree = "<group>"; };
 		B589C65229B5786100F81707 /* Echoes From The Past.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Echoes From The Past.mp3"; sourceTree = "<group>"; };
 		B589C65329B5786100F81707 /* I Welcome The Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Welcome The Darkness.mp3"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				B589C65329B5786100F81707 /* I Welcome The Darkness.mp3 */,
 				B589C64D29B5786100F81707 /* A Distant Terror.mp3 */,
 				B589C64A29B5786100F81707 /* Follow Molly.mp3 */,
-				B589C65029B5786100F81707 /* Let_s Go Deeper.mp3 */,
+				B589C65029B5786100F81707 /* Lets Go Deeper.mp3 */,
 				B589C65629B5786200F81707 /* Absolute Zero.mp3 */,
 				B589C65229B5786100F81707 /* Echoes From The Past.mp3 */,
 				B589C65729B5786200F81707 /* Dance of the Dreadnought.mp3 */,
@@ -320,7 +320,7 @@
 				B515197729B2D9A30074638E /* Fathomless Tomb.mp3 in Resources */,
 				B515197229B2D9A30074638E /* The Only Way Out Is Through.mp3 in Resources */,
 				B515197E29B2D9A30074638E /* The Shadows are Moving.mp3 in Resources */,
-				B589C65E29B5786200F81707 /* Let_s Go Deeper.mp3 in Resources */,
+				B589C65E29B5786200F81707 /* Lets Go Deeper.mp3 in Resources */,
 				B515197529B2D9A30074638E /* Fighting the Shadows.mp3 in Resources */,
 				B515197129B2D9A30074638E /* Cowards Crossing.mp3 in Resources */,
 				B515197029B2D9A30074638E /* The Descent.mp3 in Resources */,
@@ -478,7 +478,7 @@
 				DEVELOPMENT_TEAM = 6M38R97L4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Deep Rock Companion";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,7 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -512,7 +512,7 @@
 				DEVELOPMENT_TEAM = 6M38R97L4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Deep Rock Companion";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -523,7 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
