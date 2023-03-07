@@ -13,17 +13,28 @@ struct MonsterListView: View {
     
     var body: some View {
         HStack {
-            // TODO add image
-            VStack {
-                HStack{
+            HStack{
+                VStack {
+                    // TODO add image
                     Text(monster.name).font(.headline)
-                    Spacer()
                 }
-                HStack {
+            }
+            HStack {
+                VStack{
                     Text("H: \(monster.health)")
                     Text("R: \(monster.range)")
                     Text("M: \(monster.movement)")
-                    Spacer()
+                    HStack {
+                        ForEach (monster.damageDie, id: \.self){ die in
+                            Text(die)
+                        }
+                    }
+                }
+            }
+            VStack {
+                Text("!")
+                ForEach (monster.specials, id: \.self){ special in
+                    Text(special)
                 }
             }
             Spacer()
@@ -33,6 +44,6 @@ struct MonsterListView: View {
 
 struct MonsterListView_Previews: PreviewProvider {
     static var previews: some View {
-        MonsterListView(monster: Monster(id: 1, name: "Grunt", description: "Oh lord a grunt", image: "", health: 1, range: 1, movement: 3, damageDie: 1, special: "", resistences: ["": 1]))
+        MonsterListView(monster: Monster(id: 1, name: "Grunt", description: "Oh lord a grunt", image: "", health: 1, range: 1, movement: 3, damageDie: ["regular"], specials: ["Webbed", "Second"], resistences: ["Bullet"]))
     }
 }

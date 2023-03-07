@@ -223,6 +223,7 @@
 		B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */ = {
 			isa = PBXGroup;
 			children = (
+				B5D9FCB229B7D58300A39BB0 /* Images */,
 				B509ECBC29A3C6670053D5E4 /* data */,
 				B524D1FB2946394C0093F438 /* songs */,
 				B55241FF28F8EDF400141B70 /* views */,
@@ -240,6 +241,13 @@
 				B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5D9FCB229B7D58300A39BB0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

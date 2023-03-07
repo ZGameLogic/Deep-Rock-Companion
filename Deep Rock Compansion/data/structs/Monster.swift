@@ -15,7 +15,7 @@ struct Monster: Identifiable {
     var health: Int
     var range: Int
     var movement: Int
-    var damageDie: Int
-    var special: String
-    var resistences: [String: Int]
+    var damageDie: [String]
+    var specials: [String]
+    var resistences: [String]
 }

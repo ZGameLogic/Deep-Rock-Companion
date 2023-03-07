@@ -12,7 +12,7 @@ struct MonstersView: View {
     @State var searched = ""
     
     var body: some View {
-        NavigationView{
+        NavigationStack {
             List {
                 ForEach(MonsterMap().monsters) { monster in
                     if(monster.name.contains(searched) || searched == ""){
