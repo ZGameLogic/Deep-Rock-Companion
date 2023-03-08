@@ -46,7 +46,7 @@ struct MusicTracksView: View {
                     Text("Select event type")
                     Picker("Special type", selection: $specialType) {
                         Text("Swarm").tag("swarm")
-                        Text("Opressor").tag("oppressor")
+                        Text("Oppressor").tag("oppressor")
                     }.onChange(of: specialType, perform: {newValue in
                         changeSong()
                     }).pickerStyle(.segmented)
