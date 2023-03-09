@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Monster: Identifiable {
-    var id: Int
+struct Monster {
     var name: String
     var description: String
     var image: String
@@ -18,4 +17,5 @@ struct Monster: Identifiable {
     var damageDie: [String]
     var specials: [String]
     var resistences: [String]
+    var rockInStone: Bool
 }

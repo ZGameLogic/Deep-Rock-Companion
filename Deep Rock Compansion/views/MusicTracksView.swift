@@ -22,92 +22,94 @@ struct MusicTracksView: View {
     @State var playing = false
     
     var body: some View {
-        ZStack {
-            VStack {
-                Group {
-                    Text("Mission status")
-                    Picker("Mission status type", selection: $selectedType) {
-                        Text("Game").tag("game")
-                        Text("Events").tag("events")
-                    }.onChange(of: selectedType, perform: {newValue in
-                        changeSong()
-                    }).pickerStyle(.segmented)
-                    Text("Select game state")
-                    Picker("Game state", selection: $gameType) {
-                        Text("Pre").tag("pregame")
-                        Text("In").tag("ambiance")
-                        Text("Post").tag("postgame")
-                        Text("Extract").tag("extraction")
-                        Text("Failed").tag("failed")
-                    }.onChange(of: gameType, perform: {newValue in
-                        changeSong()
-                    }).pickerStyle(.segmented)
-                        .disabled(selectedType != "game")
-                    Text("Select event type")
-                    Picker("Special type", selection: $specialType) {
-                        Text("Swarm").tag("swarm")
-                        Text("Oppressor").tag("oppressor")
-                    }.onChange(of: specialType, perform: {newValue in
-                        changeSong()
-                    }).pickerStyle(.segmented)
-                        .disabled(selectedType != "events")
-                }
-                Spacer()
-                Group {
-                    Text("Now playing")
-                    Text(nowPlaying).font(.headline)
-                
-                    HStack {
-                        Button(action: {
-                            scroll(amount: -1)
-                        }) {
-                            Image(systemName: "backward.circle.fill").resizable()
-                                .frame(width: 50, height: 50)
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        if(!playing){
+        ScrollView {
+            ZStack {
+                VStack {
+                    Group {
+                        Text("Mission status")
+                        Picker("Mission status type", selection: $selectedType) {
+                            Text("Game").tag("game")
+                            Text("Events").tag("events")
+                        }.onChange(of: selectedType, perform: {newValue in
+                            changeSong()
+                        }).pickerStyle(.segmented)
+                        Text("Select game state")
+                        Picker("Game state", selection: $gameType) {
+                            Text("Pre").tag("pregame")
+                            Text("In").tag("ambiance")
+                            Text("Post").tag("postgame")
+                            Text("Extract").tag("extraction")
+                            Text("Failed").tag("failed")
+                        }.onChange(of: gameType, perform: {newValue in
+                            changeSong()
+                        }).pickerStyle(.segmented)
+                            .disabled(selectedType != "game")
+                        Text("Select event type")
+                        Picker("Special type", selection: $specialType) {
+                            Text("Swarm").tag("swarm")
+                            Text("Oppressor").tag("oppressor")
+                        }.onChange(of: specialType, perform: {newValue in
+                            changeSong()
+                        }).pickerStyle(.segmented)
+                            .disabled(selectedType != "events")
+                    }
+                    Divider().overlay(.gray)
+                    Group {
+                        Text("Now playing").padding([.top], 20)
+                        Text(nowPlaying).font(.headline)
+                        
+                        HStack {
                             Button(action: {
-                                play()
+                                scroll(amount: -1)
                             }) {
-                                Image(systemName: "play.circle.fill").resizable()
+                                Image(systemName: "backward.circle.fill").resizable()
                                     .frame(width: 50, height: 50)
                                     .aspectRatio(contentMode: .fit)
                             }
-                        } else {
+                            if(!playing){
+                                Button(action: {
+                                    play()
+                                }) {
+                                    Image(systemName: "play.circle.fill").resizable()
+                                        .frame(width: 50, height: 50)
+                                        .aspectRatio(contentMode: .fit)
+                                }
+                            } else {
+                                Button(action: {
+                                    pause()
+                                }) {
+                                    Image(systemName: "pause.circle.fill").resizable()
+                                        .frame(width: 50, height: 50)
+                                        .aspectRatio(contentMode: .fit)
+                                }
+                            }
                             Button(action: {
-                                pause()
+                                scroll(amount: 1)
                             }) {
-                                Image(systemName: "pause.circle.fill").resizable()
+                                Image(systemName: "forward.circle.fill").resizable()
                                     .frame(width: 50, height: 50)
                                     .aspectRatio(contentMode: .fit)
                             }
-                        }
-                        Button(action: {
-                            scroll(amount: 1)
-                        }) {
-                            Image(systemName: "forward.circle.fill").resizable()
-                                .frame(width: 50, height: 50)
-                                .aspectRatio(contentMode: .fit)
-                        }
-                    }.padding(20)
-                    Slider(
-                        value: $volume,
-                        in: 0...1.0,
-                        label: {
-                            Text("Volume")
-                        }
-                    ).onChange(of: volume, perform: { volume in
-                        changeVolume()
-                    })
-                    Spacer()
+                        }.padding(20)
+                        Slider(
+                            value: $volume,
+                            in: 0...1.0,
+                            label: {
+                                Text("Volume")
+                            }
+                        ).onChange(of: volume, perform: { volume in
+                            changeVolume()
+                        })
+                        Spacer()
+                    }
                 }
             }
-        }
-        .onAppear {
-            if(!playing){
-                changeSong()
+            .onAppear {
+                if(!playing){
+                    changeSong()
+                }
             }
-        }
+        }.padding([.leading, .trailing], 20)
     }
     
     func changeVolume() {

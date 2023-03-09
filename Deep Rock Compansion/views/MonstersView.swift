@@ -14,7 +14,7 @@ struct MonstersView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(MonsterMap().monsters) { monster in
+                ForEach(MonsterMap().monsters, id: \.name) { monster in
                     if(monster.name.contains(searched) || searched == ""){
                         NavigationLink {
                             MonsterDetailView(monster: monster)
