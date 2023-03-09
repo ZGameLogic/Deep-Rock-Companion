@@ -41,10 +41,12 @@ struct MonsterDetailView: View {
                     HStack {
                         Image("Special").resizable().scaledToFit().frame(width: 40, height: 40)
                         Text("=").font(.title)
-                        ForEach (monster.specials, id: \.self){ special in
-                            Image(special).resizable().scaledToFit().frame(width: 40, height: 40)
-                        }
-                    }
+                        if(!monster.specials.isEmpty){
+                            ForEach (monster.specials, id: \.self){ special in
+                                Image(special).resizable().scaledToFit().frame(width: 40, height: 40)
+                            }
+                        } else { Text("None") }
+                    }.padding([.trailing]).background(Color.gray).cornerRadius(5)
                 }
                 Divider()
             }

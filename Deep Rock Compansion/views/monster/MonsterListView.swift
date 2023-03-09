@@ -62,7 +62,6 @@ struct MonsterListView: View {
                     }
                 }
             }.background(Color.white).cornerRadius(12)
-            Spacer()
         }
     }
     
