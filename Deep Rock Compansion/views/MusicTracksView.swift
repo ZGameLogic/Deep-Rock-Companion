@@ -37,8 +37,8 @@ struct MusicTracksView: View {
                         Picker("Game state", selection: $gameType) {
                             Text("Pre").tag("pregame")
                             Text("In").tag("ambiance")
-                            Text("Post").tag("postgame")
                             Text("Extract").tag("extraction")
+                            Text("Post").tag("postgame")
                             Text("Failed").tag("failed")
                         }.onChange(of: gameType, perform: {newValue in
                             changeSong()

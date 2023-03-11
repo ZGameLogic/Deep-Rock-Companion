@@ -56,6 +56,11 @@
 		B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778D28F8DD3700867ABB /* ContentView.swift */; };
 		B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9778F28F8DD3900867ABB /* Assets.xcassets */; };
 		B5C9779328F8DD3900867ABB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */; };
+		B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */; };
+		B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */; };
+		B5DD443129BCDC8500BD748A /* DeepDiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443029BCDC8500BD748A /* DeepDiveDetailView.swift */; };
+		B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */; };
+		B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443529BCEECB00BD748A /* Persistance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +114,11 @@
 		B5C9778D28F8DD3700867ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5C9778F28F8DD3900867ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveView.swift; sourceTree = "<group>"; };
+		B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveListView.swift; sourceTree = "<group>"; };
+		B5DD443029BCDC8500BD748A /* DeepDiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveDetailView.swift; sourceTree = "<group>"; };
+		B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepDive_Model.xcdatamodel; sourceTree = "<group>"; };
+		B5DD443529BCEECB00BD748A /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +188,11 @@
 		B55241FF28F8EDF400141B70 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				B5DD442D29BCDC6B00BD748A /* deepDive */,
 				B589C63F29B577D600F81707 /* monster */,
 				B552420228F9A0B600141B70 /* MusicTracksView.swift */,
 				B589C64429B577E800F81707 /* MonstersView.swift */,
+				B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -228,9 +240,11 @@
 				B524D1FB2946394C0093F438 /* songs */,
 				B55241FF28F8EDF400141B70 /* views */,
 				B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */,
+				B5DD443529BCEECB00BD748A /* Persistance.swift */,
 				B5C9778D28F8DD3700867ABB /* ContentView.swift */,
 				B5C9778F28F8DD3900867ABB /* Assets.xcassets */,
 				B5C9779128F8DD3900867ABB /* Preview Content */,
+				B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */,
 			);
 			path = "Deep Rock Compansion";
 			sourceTree = "<group>";
@@ -248,6 +262,15 @@
 			children = (
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		B5DD442D29BCDC6B00BD748A /* deepDive */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */,
+				B5DD443029BCDC8500BD748A /* DeepDiveDetailView.swift */,
+			);
+			path = deepDive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,11 +385,16 @@
 				B589C64329B577DF00F81707 /* MonsterDetailView.swift in Sources */,
 				B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */,
 				B589C66729B63B6800F81707 /* Song.swift in Sources */,
+				B5DD443129BCDC8500BD748A /* DeepDiveDetailView.swift in Sources */,
 				B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */,
 				B589C64529B577E800F81707 /* MonstersView.swift in Sources */,
+				B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */,
 				B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */,
+				B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */,
 				B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */,
+				B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */,
 				B589C64229B577DF00F81707 /* MonsterListView.swift in Sources */,
+				B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -543,7 +571,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -577,6 +605,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */,
+			);
+			currentVersion = B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */;
+			path = DeepDive_Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5C9778028F8DD3700867ABB /* Project object */;
 }

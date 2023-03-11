@@ -18,6 +18,10 @@ struct ContentView: View {
                 .tabItem({
                     Label("Monsterpedia", systemImage: "text.book.closed.fill")
                 }).tag(2)
+            DeepDiveView().padding()
+                .tabItem({
+                    Label("Deep Dives", systemImage: "bookmark.square")
+                }).tag(3)
         }
     }
 }
