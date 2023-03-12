@@ -62,6 +62,14 @@
 		B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */; };
 		B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443529BCEECB00BD748A /* Persistance.swift */; };
 		B5DD445C29BD24F200BD748A /* AddDeepDiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD445B29BD24F200BD748A /* AddDeepDiveView.swift */; };
+		B5DD447029BE32F700BD748A /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD446A29BE32F700BD748A /* Player+CoreDataClass.swift */; };
+		B5DD447129BE32F700BD748A /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD446B29BE32F700BD748A /* Player+CoreDataProperties.swift */; };
+		B5DD447229BE32F700BD748A /* DeepDive+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD446C29BE32F700BD748A /* DeepDive+CoreDataClass.swift */; };
+		B5DD447329BE32F700BD748A /* DeepDive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD446D29BE32F700BD748A /* DeepDive+CoreDataProperties.swift */; };
+		B5DD447429BE32F700BD748A /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD446E29BE32F700BD748A /* Item+CoreDataClass.swift */; };
+		B5DD447529BE32F700BD748A /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD446F29BE32F700BD748A /* Item+CoreDataProperties.swift */; };
+		B5DD447829BE582100BD748A /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447729BE582100BD748A /* AddPlayerView.swift */; };
+		B5DD447A29BE5A8C00BD748A /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447929BE5A8C00BD748A /* PlayerListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +129,14 @@
 		B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepDive_Model.xcdatamodel; sourceTree = "<group>"; };
 		B5DD443529BCEECB00BD748A /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		B5DD445B29BD24F200BD748A /* AddDeepDiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeepDiveView.swift; sourceTree = "<group>"; };
+		B5DD446A29BE32F700BD748A /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5DD446B29BE32F700BD748A /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5DD446C29BE32F700BD748A /* DeepDive+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepDive+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5DD446D29BE32F700BD748A /* DeepDive+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepDive+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5DD446E29BE32F700BD748A /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5DD446F29BE32F700BD748A /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5DD447729BE582100BD748A /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
+		B5DD447929BE5A8C00BD748A /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +236,12 @@
 		B5C9777F28F8DD3700867ABB = {
 			isa = PBXGroup;
 			children = (
+				B5DD446A29BE32F700BD748A /* Player+CoreDataClass.swift */,
+				B5DD446B29BE32F700BD748A /* Player+CoreDataProperties.swift */,
+				B5DD446C29BE32F700BD748A /* DeepDive+CoreDataClass.swift */,
+				B5DD446D29BE32F700BD748A /* DeepDive+CoreDataProperties.swift */,
+				B5DD446E29BE32F700BD748A /* Item+CoreDataClass.swift */,
+				B5DD446F29BE32F700BD748A /* Item+CoreDataProperties.swift */,
 				B589C63A29B5769700F81707 /* .gitignore */,
 				B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */,
 				B5C9778928F8DD3700867ABB /* Products */,
@@ -272,6 +294,8 @@
 				B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */,
 				B5DD443029BCDC8500BD748A /* DeepDiveDetailView.swift */,
 				B5DD445B29BD24F200BD748A /* AddDeepDiveView.swift */,
+				B5DD447729BE582100BD748A /* AddPlayerView.swift */,
+				B5DD447929BE5A8C00BD748A /* PlayerListView.swift */,
 			);
 			path = deepDive;
 			sourceTree = "<group>";
@@ -383,21 +407,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DD447829BE582100BD748A /* AddPlayerView.swift in Sources */,
 				B589C64829B5780900F81707 /* Monster.swift in Sources */,
 				B589C64929B5780900F81707 /* MonsterMap.swift in Sources */,
+				B5DD447129BE32F700BD748A /* Player+CoreDataProperties.swift in Sources */,
 				B589C64329B577DF00F81707 /* MonsterDetailView.swift in Sources */,
 				B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */,
 				B589C66729B63B6800F81707 /* Song.swift in Sources */,
+				B5DD447429BE32F700BD748A /* Item+CoreDataClass.swift in Sources */,
 				B5DD443129BCDC8500BD748A /* DeepDiveDetailView.swift in Sources */,
 				B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */,
 				B589C64529B577E800F81707 /* MonstersView.swift in Sources */,
 				B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */,
 				B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */,
+				B5DD447329BE32F700BD748A /* DeepDive+CoreDataProperties.swift in Sources */,
+				B5DD447229BE32F700BD748A /* DeepDive+CoreDataClass.swift in Sources */,
 				B5DD445C29BD24F200BD748A /* AddDeepDiveView.swift in Sources */,
+				B5DD447029BE32F700BD748A /* Player+CoreDataClass.swift in Sources */,
 				B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */,
 				B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */,
+				B5DD447A29BE5A8C00BD748A /* PlayerListView.swift in Sources */,
 				B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */,
 				B589C64229B577DF00F81707 /* MonsterListView.swift in Sources */,
+				B5DD447529BE32F700BD748A /* Item+CoreDataProperties.swift in Sources */,
 				B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

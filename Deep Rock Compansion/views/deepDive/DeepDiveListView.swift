@@ -12,7 +12,7 @@ struct DeepDiveListView: View {
     let deepDive : DeepDive
     
     var body: some View {
-        Text(deepDive.name!)
+        Text(deepDive.name)
     }
 }
 
