@@ -61,6 +61,7 @@
 		B5DD443129BCDC8500BD748A /* DeepDiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443029BCDC8500BD748A /* DeepDiveDetailView.swift */; };
 		B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */; };
 		B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443529BCEECB00BD748A /* Persistance.swift */; };
+		B5DD445C29BD24F200BD748A /* AddDeepDiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD445B29BD24F200BD748A /* AddDeepDiveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,7 @@
 		B5DD443029BCDC8500BD748A /* DeepDiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveDetailView.swift; sourceTree = "<group>"; };
 		B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepDive_Model.xcdatamodel; sourceTree = "<group>"; };
 		B5DD443529BCEECB00BD748A /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		B5DD445B29BD24F200BD748A /* AddDeepDiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeepDiveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			children = (
 				B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */,
 				B5DD443029BCDC8500BD748A /* DeepDiveDetailView.swift */,
+				B5DD445B29BD24F200BD748A /* AddDeepDiveView.swift */,
 			);
 			path = deepDive;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				B589C64529B577E800F81707 /* MonstersView.swift in Sources */,
 				B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */,
 				B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */,
+				B5DD445C29BD24F200BD748A /* AddDeepDiveView.swift in Sources */,
 				B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */,
 				B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */,
 				B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */,

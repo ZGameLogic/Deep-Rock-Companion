@@ -15,7 +15,7 @@ struct MonsterListView: View {
         HStack {
             HStack{
                 VStack {
-                    Image("placeholder").scaledToFit()
+                    Image(monster.image).resizable().scaledToFit().frame(width: 100, height: 100)
                     Text(monster.name).font(.headline).frame(width: 85, height: 50)
                 }
                 VStack{
