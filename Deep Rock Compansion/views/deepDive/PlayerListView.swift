@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct PlayerListView: View {
+    
+    let player: Player
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack{
+                Text(player.playerName!)
+                Spacer()
+            }
+            HStack {
+                Text(player.classType!).font(.subheadline)
+                Spacer()
+            }
+        }
     }
 }
 
 struct PlayerListView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerListView()
+        PlayerListView(player: Player())
     }
 }

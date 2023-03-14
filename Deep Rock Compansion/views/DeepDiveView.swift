@@ -17,14 +17,15 @@ struct DeepDiveView: View {
     
     @State var searched = ""
     @State var showAddDD = false
+    @State var showRules = false
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(deepDives) { dive in
-                    if(searched == "" || dive.name.contains(searched)){
+                    if(searched == "" || dive.name!.contains(searched)){
                         NavigationLink {
-                            DeepDiveDetailView()
+                            Text("Greet")
                         } label: {
                             DeepDiveListView(deepDive: dive)
                         }
@@ -41,11 +42,18 @@ struct DeepDiveView: View {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
+                ToolbarItem {
+                    Button(action: {showRules = true}, label: {
+                        Label("Rules", systemImage: "text.book.closed")
+                    })
+                }
             }
         }.searchable(text: $searched)
-            .sheet(isPresented: $showAddDD, content: {
-                AddDeepDiveView(presented: $showAddDD)
-            })
+        .sheet(isPresented: $showAddDD, content: {
+            AddDeepDiveView(presented: $showAddDD)
+        }).sheet(isPresented: $showRules, content: {
+            DeepDiveRulesView()
+        })
     }
     
     private func deleteDive(offsets: IndexSet){

@@ -24,7 +24,7 @@ struct AddDeepDiveView: View {
     
     @Binding var presented: Bool
     
-    var players: [Player] = []
+    @State var players: [Player] = []
     
     var body: some View {
         Text("Add Deep Dive").font(.title).padding()
@@ -46,12 +46,14 @@ struct AddDeepDiveView: View {
                 }
             })
             Section("Players", content: {
-                ForEach(players){ player in
-                    PlayerListView()
-                }
                 Button("Add player", action: {
                     presentAddPlayer = true
                 })
+                List {
+                    ForEach(players){ player in
+                        PlayerListView(player: player)
+                    }.onDelete(perform: deletePlayer)
+                }
             })
             Section("Notes", content: {
                 TextEditor(text: $notes)
@@ -64,7 +66,7 @@ struct AddDeepDiveView: View {
                 }
             })
         }.sheet(isPresented: $presentAddPlayer, content: {
-            AddPlayerView(players: players)
+            AddPlayerView(players: $players, presenting: $presentAddPlayer)
         }).alert("Unable to add deep dive",
                  isPresented: $showError,
                  actions: {
@@ -94,10 +96,27 @@ struct AddDeepDiveView: View {
         }
     }
     
+    private func deletePlayer(offsets: IndexSet){
+        withAnimation {
+            offsets.map { $0 }.forEach{value in
+                players.remove(at: value)
+            }
+        }
+    }
+    
     private func addDeepDive(){
         let deepDive = DeepDive(context: viewContext)
-        deepDive.name = "This is a new deep dive"
+        deepDive.name = deepDiveName
         deepDive.lastSaved = Date.now
+        for player in players {deepDive.addToPlayers(player)}
+        let nitra = Item(context: viewContext)
+        nitra.name = "nitra"
+        nitra.amount = Int16(mollyNitra)
+        let gold = Item(context: viewContext)
+        gold.name = "gold"
+        gold.amount = Int16(mollyGold)
+        deepDive.addToMollyInv(nitra)
+        deepDive.addToMollyInv(gold)
         do {
             try viewContext.save()
         } catch {

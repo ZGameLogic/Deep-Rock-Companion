@@ -12,7 +12,22 @@ struct DeepDiveListView: View {
     let deepDive : DeepDive
     
     var body: some View {
-        Text(deepDive.name)
+        VStack {
+            HStack{
+                Text(deepDive.name!).font(.title)
+                Spacer()
+            }
+            HStack{
+                ForEach(deepDive.playersArray){ player in
+                    Text(player.playerName!)
+                }
+                Spacer()
+            }
+            HStack{
+                Text(deepDive.lastSaved!.formatted(.dateTime.day().month().year()))
+                Spacer()
+            }
+        }
     }
 }
 
