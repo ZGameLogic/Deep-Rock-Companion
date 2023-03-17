@@ -2,7 +2,7 @@
 //  Card+CoreDataProperties.swift
 //  Deep Rock Compansion
 //
-//  Created by Benjamin Shabowski on 3/13/23.
+//  Created by Benjamin Shabowski on 3/17/23.
 //
 //
 
@@ -22,6 +22,8 @@ extension Card {
     @NSManaged public var secondaryUpgrages: NSSet?
     @NSManaged public var throwables: NSSet?
     @NSManaged public var utilities: NSSet?
+    
+    
 
 }
 

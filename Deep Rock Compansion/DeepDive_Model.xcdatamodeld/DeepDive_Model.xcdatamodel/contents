@@ -9,16 +9,12 @@
         <relationship name="utilities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="utilities" inverseEntity="Player"/>
     </entity>
     <entity name="DeepDive" representedClassName="DeepDive" syncable="YES">
+        <attribute name="gold" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="lastSaved" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String"/>
+        <attribute name="nitra" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="notes" optional="YES" attributeType="String"/>
-        <relationship name="mollyInv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="mollyInv" inverseEntity="Item"/>
         <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="deepDive" inverseEntity="Player"/>
-    </entity>
-    <entity name="Item" representedClassName="Item" syncable="YES">
-        <attribute name="amount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="name" attributeType="String"/>
-        <relationship name="mollyInv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeepDive" inverseName="mollyInv" inverseEntity="DeepDive"/>
     </entity>
     <entity name="Player" representedClassName="Player" syncable="YES">
         <attribute name="classType" attributeType="String"/>

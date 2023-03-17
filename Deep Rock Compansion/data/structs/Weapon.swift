@@ -64,11 +64,9 @@ struct Data {
     
     func upgradeScroll(current: String, amount: Int) -> String {
         let currentIndex = upgrades.firstIndex(of: current)!
-        print("Current: \(currentIndex)")
         var newIndex = currentIndex + amount
         if(newIndex < 0) {newIndex += upgrades.count}
         if(newIndex >= upgrades.count) {newIndex -= upgrades.count}
-        print("New: \(upgrades[newIndex])")
         return upgrades[newIndex]
     }
 }

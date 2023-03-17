@@ -9,12 +9,12 @@ import SwiftUI
 
 struct DeepDiveListView: View {
     
-    let deepDive : DeepDive
+    @Binding var deepDive : DeepDive
     
     var body: some View {
         VStack {
             HStack{
-                Text(deepDive.name!).font(.title)
+                Text(deepDive.name).font(.title)
                 Spacer()
             }
             HStack{
@@ -24,15 +24,9 @@ struct DeepDiveListView: View {
                 Spacer()
             }
             HStack{
-                Text(deepDive.lastSaved!.formatted(.dateTime.day().month().year()))
+                Text(deepDive.lastSaved.formatted(.dateTime.day().month().year()))
                 Spacer()
             }
         }
-    }
-}
-
-struct DeepDiveListView_Previews: PreviewProvider {
-    static var previews: some View {
-        DeepDiveListView(deepDive: DeepDive())
     }
 }

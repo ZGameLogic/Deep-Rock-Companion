@@ -2,7 +2,7 @@
 //  Player+CoreDataProperties.swift
 //  Deep Rock Compansion
 //
-//  Created by Benjamin Shabowski on 3/13/23.
+//  Created by Benjamin Shabowski on 3/17/23.
 //
 //
 
@@ -24,35 +24,77 @@ extension Player {
     @NSManaged public var secondaryAmmo: Int16
     @NSManaged public var secondaryGun: String?
     @NSManaged public var secondaryOverclocked: Bool
+    @NSManaged public var deepDive: NSSet?
     @NSManaged public var primaryUpgrages: NSSet?
     @NSManaged public var rockInStones: NSSet?
     @NSManaged public var secondaryUpgrades: NSSet?
     @NSManaged public var throwables: NSSet?
     @NSManaged public var utilities: NSSet?
-    @NSManaged public var deepDive: NSSet?
+
+    public var throwablesArray: [Card] {
+        let set = throwables as? Set<Card> ?? []
+        return set.sorted{
+            $0.name! < $1.name!
+        }
+    }
     
-    public var primaryUpgradesArray: [String] {
-        let set = primaryUpgrages as? Set<String> ?? []
-        return set.sorted {
-            if($0 == $1){
-                return $0 < $1
-            } else {
-                return $0 < $1
-            }
+    public var rockInStonesArray: [Card] {
+        let set = rockInStones as? Set<Card> ?? []
+        return set.sorted{
+            $0.name! < $1.name!
+        }
+    }
+    
+    public var primaryUpgradesArray: [Card] {
+        let set = primaryUpgrages as? Set<Card> ?? []
+        return set.sorted{
+            $0.name! < $1.name!
         }
     }
 
-    public var secondaryUpgradesArray: [String] {
-        let set = secondaryUpgrades as? Set<String> ?? []
+    public var secondaryUpgradesArray: [Card] {
+        let set = secondaryUpgrades as? Set<Card> ?? []
         return set.sorted {
-            if($0 == $1){
-                return $0 < $1
-            } else {
-                return $0 < $1
-            }
+            $0.name! < $1.name!
         }
     }
     
+    public var hasCards: Bool {
+        rockInStones!.count > 0 || throwables!.count > 0
+    }
+    
+    public func setThrowables(throwables: [Card]){
+        self.throwables = NSSet(array: throwables)
+    }
+    
+    public func setRockInStones(risCards: [Card]){
+        self.rockInStones = NSSet(array: risCards)
+    }
+    
+    public func setPrimaryUpgrages(primaryUpgrades: [Card]){
+        self.primaryUpgrages = NSSet(array: primaryUpgrades)
+    }
+    
+    public func setSecondaryUpgrades(secondaryUpgrades: [Card]){
+        self.secondaryUpgrades = NSSet(array: secondaryUpgrades)
+    }
+}
+
+// MARK: Generated accessors for deepDive
+extension Player {
+
+    @objc(addDeepDiveObject:)
+    @NSManaged public func addToDeepDive(_ value: DeepDive)
+
+    @objc(removeDeepDiveObject:)
+    @NSManaged public func removeFromDeepDive(_ value: DeepDive)
+
+    @objc(addDeepDive:)
+    @NSManaged public func addToDeepDive(_ values: NSSet)
+
+    @objc(removeDeepDive:)
+    @NSManaged public func removeFromDeepDive(_ values: NSSet)
+
 }
 
 // MARK: Generated accessors for primaryUpgrages
@@ -137,23 +179,6 @@ extension Player {
 
     @objc(removeUtilities:)
     @NSManaged public func removeFromUtilities(_ values: NSSet)
-
-}
-
-// MARK: Generated accessors for deepDive
-extension Player {
-
-    @objc(addDeepDiveObject:)
-    @NSManaged public func addToDeepDive(_ value: DeepDive)
-
-    @objc(removeDeepDiveObject:)
-    @NSManaged public func removeFromDeepDive(_ value: DeepDive)
-
-    @objc(addDeepDive:)
-    @NSManaged public func addToDeepDive(_ values: NSSet)
-
-    @objc(removeDeepDive:)
-    @NSManaged public func removeFromDeepDive(_ values: NSSet)
 
 }
 

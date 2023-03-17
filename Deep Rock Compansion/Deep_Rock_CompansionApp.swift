@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+ @main
 struct Deep_Rock_CompansionApp: App {
     let persistenceController = PersistenceController.shared
     

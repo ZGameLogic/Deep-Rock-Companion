@@ -9,7 +9,7 @@ import SwiftUI
 
 var startingClass = "Gunner"
 
-struct AddPlayerView: View {
+struct PlayerView: View {
     
     @Environment(\.managedObjectContext) var viewContext
     
@@ -38,6 +38,7 @@ struct AddPlayerView: View {
     @State var sUpgradeSlotTwo = "none"
     
     init(players: Binding<[Player]>, presenting: Binding<Bool>, player: Player? = nil){
+        self._players = players
         if let player {
             playerName = player.playerName!
             health = Int(player.health)
@@ -46,29 +47,36 @@ struct AddPlayerView: View {
             primaryGun = player.primaryGun!
             primaryGunAmmo = Int(player.primaryAmmo)
             if(player.primaryUpgrages!.count >= 1){
-                pUpgradeSlotOne = player.primaryUpgradesArray[0]
+                pUpgradeSlotOne = player.primaryUpgradesArray[0].name!
             }
             if(player.primaryUpgrages!.count >= 2){
-                pUpgradeSlotTwo = player.primaryUpgradesArray[1]
+                pUpgradeSlotTwo = player.primaryUpgradesArray[1].name!
             }
             // secondary gun stuff
             secondaryGun = player.secondaryGun!
             secondaryGunAmmo = Int(player.secondaryAmmo)
             secondaryGunOverclocked = player.secondaryOverclocked
             if(player.secondaryUpgrades!.count >= 1){
-                sUpgradeSlotOne = player.secondaryUpgradesArray[0]
+                sUpgradeSlotOne = player.secondaryUpgradesArray[0].name!
             }
             if(player.secondaryUpgrades!.count >= 2){
-                sUpgradeSlotTwo = player.secondaryUpgradesArray[1]
+                sUpgradeSlotTwo = player.secondaryUpgradesArray[1].name!
             }
             self.player = player
         }
-        self._players = players
         self._presenting = presenting
+        if(player != nil){
+            for card in player!.rockInStonesArray {
+                model.addRockInStone(name: card.name!)
+            }
+            for card in player!.throwablesArray {
+                model.addThrowable(name: card.name!)
+            }
+        }
     }
     
     var body: some View {
-        Text("Add Player").font(.title).padding()
+        Text("\(player == nil ? "Add" : "Update") Player").font(.title).padding()
         Form {
             Section("General", content: {
                 TextField("Player name", text: $playerName)
@@ -193,9 +201,9 @@ struct AddPlayerView: View {
                     }.onDelete(perform: model.deleteThrowable)
                 }
                 List {
-                    ForEach(model.rockInStones, id: \.self) { value in
+                    ForEach(Array(model.rockInStones.enumerated()), id: \.offset) {index, value in
                         HStack {
-                            TextField("Rock in Stone card", text: model.stringBindingRockInStone(for: value))
+                            TextField("Rock in Stone card", text: model.stringBindingRockInStone(for: index))
                             Spacer()
                         }
                     }.onDelete(perform: model.deleteRockInStone)
@@ -205,7 +213,7 @@ struct AddPlayerView: View {
             Button(action: validate, label: {
                 HStack{
                     Spacer()
-                    Text("Create Player")
+                    Text("\(player == nil ? "Create" : "Update") Player")
                     Spacer()
                 }
             })
@@ -249,16 +257,15 @@ struct AddPlayerView: View {
             player.primaryAmmo = Int16(primaryGunAmmo)
             player.secondaryAmmo = Int16(secondaryGunAmmo)
             player.secondaryOverclocked = secondaryGunOverclocked
-            for card in pUpgradeToCardArray() {player.addToPrimaryUpgrages(card)}
-            for card in sUpgradeToCardArray() {player.addToSecondaryUpgrades(card)}
-            for card in RISToCardArray() {player.addToRockInStones(card)}
-            for card in throwablesToCardArray() {player.addToThrowables(card)}
+            player.setThrowables(throwables: throwablesToCardArray())
+            player.setRockInStones(risCards: RISToCardArray())
+            player.setPrimaryUpgrages(primaryUpgrades: pUpgradeToCardArray())
+            player.setSecondaryUpgrades(secondaryUpgrades: sUpgradeToCardArray())
         }
         if(new){
             players.append(player!)
         }
         presenting = false
-        print(presenting)
     }
     
     private func RISToCardArray() -> [Card]{
@@ -278,22 +285,16 @@ struct AddPlayerView: View {
     }
     
     private func pUpgradeToCardArray() -> [Card] {
-        var priUps: [Card] = []
-        if(pUpgradeSlotOne != "none"){priUps.append(upgradeToCard(name: pUpgradeSlotOne))}
-        if(pUpgradeSlotTwo != "none"){priUps.append(upgradeToCard(name: pUpgradeSlotTwo))}
-        return priUps
+        return [upgradeToCard(name: pUpgradeSlotOne), upgradeToCard(name: pUpgradeSlotTwo)]
     }
     
     private func sUpgradeToCardArray() -> [Card] {
-        var secUps: [Card] = []
-        if(sUpgradeSlotOne != "none"){secUps.append(upgradeToCard(name: sUpgradeSlotOne))}
-        if(sUpgradeSlotTwo != "none"){secUps.append(upgradeToCard(name: sUpgradeSlotTwo))}
-        return secUps
+        return [upgradeToCard(name: sUpgradeSlotOne), upgradeToCard(name: sUpgradeSlotTwo)]
     }
     
     private func upgradeToCard(name: String) -> Card {
         let newItem = Card(context: viewContext)
-        newItem.name = pUpgradeSlotOne
+        newItem.name = name
         return newItem
     }
 }
@@ -332,8 +333,7 @@ public class AddPlayerViewModel: ObservableObject, Equatable {
        }
     }
     
-    func stringBindingRockInStone(for value: String) -> Binding<String> {
-        let index = rockInStones.firstIndex(of: value)!
+    func stringBindingRockInStone(for index: Int) -> Binding<String> {
         return Binding(get: {
             return self.rockInStones[index]
         }, set: {
@@ -358,6 +358,6 @@ public class AddPlayerViewModel: ObservableObject, Equatable {
 
 struct AddPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPlayerView(players: Binding.constant([]), presenting: Binding.constant(true))
+        PlayerView(players: Binding.constant([]), presenting: Binding.constant(true))
     }
 }

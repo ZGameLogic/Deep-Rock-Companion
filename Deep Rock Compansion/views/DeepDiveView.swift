@@ -23,18 +23,14 @@ struct DeepDiveView: View {
         NavigationStack {
             List {
                 ForEach(deepDives) { dive in
-                    if(searched == "" || dive.name!.contains(searched)){
-                        NavigationLink {
-                            Text("Greet")
-                        } label: {
-                            DeepDiveListView(deepDive: dive)
-                        }
+                    if(searched == "" || dive.name.contains(searched)){
+                        NavigationLink(destination: {
+                            DeepDiveDetailView(deepDive: dive.deepDiveBinding, players: dive.playersBinding)
+                        }, label: {DeepDiveListView(deepDive: dive.deepDiveBinding)})
                     }
                 }.onDelete(perform: deleteDive)
-            }.navigationTitle("Deep Dives").toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
+            }.navigationTitle("Deep Dives")
+                .toolbar {
                 ToolbarItem {
                     Button(action: {
                         showAddDD = true
@@ -49,11 +45,12 @@ struct DeepDiveView: View {
                 }
             }
         }.searchable(text: $searched)
-        .sheet(isPresented: $showAddDD, content: {
-            AddDeepDiveView(presented: $showAddDD)
-        }).sheet(isPresented: $showRules, content: {
-            DeepDiveRulesView()
-        })
+            .sheet(isPresented: $showAddDD, content: {
+                DeepDiveAddView(presented: $showAddDD)
+                Text("")
+            }).sheet(isPresented: $showRules, content: {
+                DeepDiveRulesView()
+            })
     }
     
     private func deleteDive(offsets: IndexSet){
@@ -63,8 +60,6 @@ struct DeepDiveView: View {
             do {
                 try viewContext.save()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
@@ -77,3 +72,5 @@ struct DeepDiveView_Previews: PreviewProvider {
         DeepDiveView()
     }
 }
+
+
