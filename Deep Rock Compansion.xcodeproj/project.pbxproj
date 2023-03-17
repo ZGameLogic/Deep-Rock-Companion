@@ -8,67 +8,141 @@
 
 /* Begin PBXBuildFile section */
 		B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509ECBD29A3C68C0053D5E4 /* SongMap.swift */; };
-		B524D2122946397B0093F438 /* A Matter of Skill and Ammunition.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FC2946396A0093F438 /* A Matter of Skill and Ammunition.mp3 */; };
-		B524D2132946397B0093F438 /* Horrors of Hoxxes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FD2946396B0093F438 /* Horrors of Hoxxes.mp3 */; };
-		B524D2142946397B0093F438 /* Petrified Fury.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FE2946396B0093F438 /* Petrified Fury.mp3 */; };
-		B524D2152946397B0093F438 /* The Only Way Out Is Through.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D1FF2946396D0093F438 /* The Only Way Out Is Through.mp3 */; };
-		B524D2162946397B0093F438 /* Hold My Beard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2002946396D0093F438 /* Hold My Beard.mp3 */; };
-		B524D2172946397B0093F438 /* March of the Brave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2012946396E0093F438 /* March of the Brave.mp3 */; };
-		B524D2182946397B0093F438 /* Ode to the Fallen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2022946396F0093F438 /* Ode to the Fallen.mp3 */; };
-		B524D2192946397B0093F438 /* Fighting the Shadows.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D203294639700093F438 /* Fighting the Shadows.mp3 */; };
-		B524D21A2946397B0093F438 /* Beneath the Crust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D204294639710093F438 /* Beneath the Crust.mp3 */; };
-		B524D21B2946397B0093F438 /* Robot Getaway.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D205294639710093F438 /* Robot Getaway.mp3 */; };
-		B524D21C2946397B0093F438 /* The Deep Dive.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D206294639720093F438 /* The Deep Dive.mp3 */; };
-		B524D21D2946397B0093F438 /* The Shadows are Moving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D207294639720093F438 /* The Shadows are Moving.mp3 */; };
-		B524D21E2946397B0093F438 /* Theyre Here.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D208294639730093F438 /* Theyre Here.mp3 */; };
-		B524D21F2946397B0093F438 /* Attack of the Glyphids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D209294639730093F438 /* Attack of the Glyphids.mp3 */; };
-		B524D2202946397B0093F438 /* The Descent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20A294639740093F438 /* The Descent.mp3 */; };
-		B524D2212946397B0093F438 /* Karls End.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20B294639750093F438 /* Karls End.mp3 */; };
-		B524D2222946397B0093F438 /* Into The Abyss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20C294639760093F438 /* Into The Abyss.mp3 */; };
-		B524D2232946397B0093F438 /* Cowards Crossing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20D294639770093F438 /* Cowards Crossing.mp3 */; };
-		B524D2242946397B0093F438 /* Principle of Darkness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20E294639780093F438 /* Principle of Darkness.mp3 */; };
-		B524D2252946397B0093F438 /* I am Lost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D20F294639790093F438 /* I am Lost.mp3 */; };
-		B524D2262946397B0093F438 /* Fathomless Tomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2102946397A0093F438 /* Fathomless Tomb.mp3 */; };
-		B524D2272946397B0093F438 /* Leave No Dwarf Behind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B524D2112946397B0093F438 /* Leave No Dwarf Behind.mp3 */; };
-		B552420128F8EE0600141B70 /* VoiceLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420028F8EE0600141B70 /* VoiceLinesView.swift */; };
+		B515196C29B2D9A30074638E /* The Deep Dive.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195629B2D9A30074638E /* The Deep Dive.mp3 */; };
+		B515196D29B2D9A30074638E /* Hold My Beard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195729B2D9A30074638E /* Hold My Beard.mp3 */; };
+		B515196E29B2D9A30074638E /* Leave No Dwarf Behind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195829B2D9A30074638E /* Leave No Dwarf Behind.mp3 */; };
+		B515196F29B2D9A30074638E /* March of the Brave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195929B2D9A30074638E /* March of the Brave.mp3 */; };
+		B515197029B2D9A30074638E /* The Descent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195A29B2D9A30074638E /* The Descent.mp3 */; };
+		B515197129B2D9A30074638E /* Cowards Crossing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195B29B2D9A30074638E /* Cowards Crossing.mp3 */; };
+		B515197229B2D9A30074638E /* The Only Way Out Is Through.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195C29B2D9A30074638E /* The Only Way Out Is Through.mp3 */; };
+		B515197329B2D9A30074638E /* A Matter of Skill and Ammunition.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195D29B2D9A30074638E /* A Matter of Skill and Ammunition.mp3 */; };
+		B515197429B2D9A30074638E /* Beneath the Crust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195E29B2D9A30074638E /* Beneath the Crust.mp3 */; };
+		B515197529B2D9A30074638E /* Fighting the Shadows.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195F29B2D9A30074638E /* Fighting the Shadows.mp3 */; };
+		B515197629B2D9A30074638E /* Horrors of Hoxxes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196029B2D9A30074638E /* Horrors of Hoxxes.mp3 */; };
+		B515197729B2D9A30074638E /* Fathomless Tomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196129B2D9A30074638E /* Fathomless Tomb.mp3 */; };
+		B515197829B2D9A30074638E /* Petrified Fury.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196229B2D9A30074638E /* Petrified Fury.mp3 */; };
+		B515197929B2D9A30074638E /* Theyre Here.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196329B2D9A30074638E /* Theyre Here.mp3 */; };
+		B515197A29B2D9A30074638E /* Attack of the Glyphids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196429B2D9A30074638E /* Attack of the Glyphids.mp3 */; };
+		B515197B29B2D9A30074638E /* Into The Abyss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196529B2D9A30074638E /* Into The Abyss.mp3 */; };
+		B515197C29B2D9A30074638E /* Ode to the Fallen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196629B2D9A30074638E /* Ode to the Fallen.mp3 */; };
+		B515197D29B2D9A30074638E /* Robot Getaway.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196729B2D9A30074638E /* Robot Getaway.mp3 */; };
+		B515197E29B2D9A30074638E /* The Shadows are Moving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196829B2D9A30074638E /* The Shadows are Moving.mp3 */; };
+		B515197F29B2D9A30074638E /* Karls End.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196929B2D9A30074638E /* Karls End.mp3 */; };
+		B515198029B2D9A30074638E /* I am Lost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196A29B2D9A30074638E /* I am Lost.mp3 */; };
+		B515198129B2D9A30074638E /* Principle of Darkness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */; };
 		B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420228F9A0B600141B70 /* MusicTracksView.swift */; };
+		B561F86229C4C7BD000F93C7 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85C29C4C7BD000F93C7 /* Card+CoreDataClass.swift */; };
+		B561F86329C4C7BD000F93C7 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85D29C4C7BD000F93C7 /* Card+CoreDataProperties.swift */; };
+		B561F86429C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85E29C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift */; };
+		B561F86529C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85F29C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift */; };
+		B561F86629C4C7BD000F93C7 /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F86029C4C7BD000F93C7 /* Player+CoreDataClass.swift */; };
+		B561F86729C4C7BD000F93C7 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F86129C4C7BD000F93C7 /* Player+CoreDataProperties.swift */; };
+		B561F86929C4CDA3000F93C7 /* PlayerListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F86829C4CDA3000F93C7 /* PlayerListDetailView.swift */; };
+		B589C63B29B5769700F81707 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B589C63A29B5769700F81707 /* .gitignore */; };
+		B589C64229B577DF00F81707 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64029B577DF00F81707 /* MonsterListView.swift */; };
+		B589C64329B577DF00F81707 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64129B577DF00F81707 /* MonsterDetailView.swift */; };
+		B589C64529B577E800F81707 /* MonstersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64429B577E800F81707 /* MonstersView.swift */; };
+		B589C64829B5780900F81707 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64629B5780900F81707 /* Monster.swift */; };
+		B589C64929B5780900F81707 /* MonsterMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64729B5780900F81707 /* MonsterMap.swift */; };
+		B589C65829B5786200F81707 /* Follow Molly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64A29B5786100F81707 /* Follow Molly.mp3 */; };
+		B589C65929B5786200F81707 /* Deceived by Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64B29B5786100F81707 /* Deceived by Light.mp3 */; };
+		B589C65A29B5786200F81707 /* The Core Infuser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64C29B5786100F81707 /* The Core Infuser.mp3 */; };
+		B589C65B29B5786200F81707 /* A Distant Terror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64D29B5786100F81707 /* A Distant Terror.mp3 */; };
+		B589C65C29B5786200F81707 /* The Last Ascent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64E29B5786100F81707 /* The Last Ascent.mp3 */; };
+		B589C65D29B5786200F81707 /* In the Belly of the Beast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64F29B5786100F81707 /* In the Belly of the Beast.mp3 */; };
+		B589C65E29B5786200F81707 /* Lets Go Deeper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65029B5786100F81707 /* Lets Go Deeper.mp3 */; };
+		B589C65F29B5786200F81707 /* RUN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65129B5786100F81707 /* RUN.mp3 */; };
+		B589C66029B5786200F81707 /* Echoes From The Past.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65229B5786100F81707 /* Echoes From The Past.mp3 */; };
+		B589C66129B5786200F81707 /* I Welcome The Darkness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65329B5786100F81707 /* I Welcome The Darkness.mp3 */; };
+		B589C66229B5786200F81707 /* Axes Out.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65429B5786100F81707 /* Axes Out.mp3 */; };
+		B589C66329B5786200F81707 /* Interstellar Nightmares.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65529B5786100F81707 /* Interstellar Nightmares.mp3 */; };
+		B589C66429B5786200F81707 /* Absolute Zero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65629B5786200F81707 /* Absolute Zero.mp3 */; };
+		B589C66529B5786200F81707 /* Dance of the Dreadnought.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65729B5786200F81707 /* Dance of the Dreadnought.mp3 */; };
+		B589C66729B63B6800F81707 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C66629B63B6800F81707 /* Song.swift */; };
+		B58F20DD29BF599700623363 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F20DC29BF599700623363 /* Weapon.swift */; };
+		B5BD1D2D29C3BE80007271CC /* DeepDiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */; };
 		B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */; };
 		B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778D28F8DD3700867ABB /* ContentView.swift */; };
 		B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9778F28F8DD3900867ABB /* Assets.xcassets */; };
 		B5C9779328F8DD3900867ABB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */; };
+		B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */; };
+		B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */; };
+		B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */; };
+		B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443529BCEECB00BD748A /* Persistance.swift */; };
+		B5DD445C29BD24F200BD748A /* DeepDiveAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD445B29BD24F200BD748A /* DeepDiveAddView.swift */; };
+		B5DD447829BE582100BD748A /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447729BE582100BD748A /* PlayerView.swift */; };
+		B5DD447A29BE5A8C00BD748A /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447929BE5A8C00BD748A /* PlayerListView.swift */; };
+		B5DD447C29BE64F200BD748A /* DeepDiveRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447B29BE64F200BD748A /* DeepDiveRulesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B509ECBD29A3C68C0053D5E4 /* SongMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongMap.swift; sourceTree = "<group>"; };
-		B524D1FC2946396A0093F438 /* A Matter of Skill and Ammunition.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A Matter of Skill and Ammunition.mp3"; sourceTree = "<group>"; };
-		B524D1FD2946396B0093F438 /* Horrors of Hoxxes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Horrors of Hoxxes.mp3"; sourceTree = "<group>"; };
-		B524D1FE2946396B0093F438 /* Petrified Fury.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Petrified Fury.mp3"; sourceTree = "<group>"; };
-		B524D1FF2946396D0093F438 /* The Only Way Out Is Through.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Only Way Out Is Through.mp3"; sourceTree = "<group>"; };
-		B524D2002946396D0093F438 /* Hold My Beard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hold My Beard.mp3"; sourceTree = "<group>"; };
-		B524D2012946396E0093F438 /* March of the Brave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "March of the Brave.mp3"; sourceTree = "<group>"; };
-		B524D2022946396F0093F438 /* Ode to the Fallen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ode to the Fallen.mp3"; sourceTree = "<group>"; };
-		B524D203294639700093F438 /* Fighting the Shadows.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fighting the Shadows.mp3"; sourceTree = "<group>"; };
-		B524D204294639710093F438 /* Beneath the Crust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Beneath the Crust.mp3"; sourceTree = "<group>"; };
-		B524D205294639710093F438 /* Robot Getaway.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Robot Getaway.mp3"; sourceTree = "<group>"; };
-		B524D206294639720093F438 /* The Deep Dive.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Deep Dive.mp3"; sourceTree = "<group>"; };
-		B524D207294639720093F438 /* The Shadows are Moving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Shadows are Moving.mp3"; sourceTree = "<group>"; };
-		B524D208294639730093F438 /* Theyre Here.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Theyre Here.mp3"; sourceTree = "<group>"; };
-		B524D209294639730093F438 /* Attack of the Glyphids.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack of the Glyphids.mp3"; sourceTree = "<group>"; };
-		B524D20A294639740093F438 /* The Descent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Descent.mp3"; sourceTree = "<group>"; };
-		B524D20B294639750093F438 /* Karls End.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Karls End.mp3"; sourceTree = "<group>"; };
-		B524D20C294639760093F438 /* Into The Abyss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Into The Abyss.mp3"; sourceTree = "<group>"; };
-		B524D20D294639770093F438 /* Cowards Crossing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cowards Crossing.mp3"; sourceTree = "<group>"; };
-		B524D20E294639780093F438 /* Principle of Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Principle of Darkness.mp3"; sourceTree = "<group>"; };
-		B524D20F294639790093F438 /* I am Lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I am Lost.mp3"; sourceTree = "<group>"; };
-		B524D2102946397A0093F438 /* Fathomless Tomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fathomless Tomb.mp3"; sourceTree = "<group>"; };
-		B524D2112946397B0093F438 /* Leave No Dwarf Behind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Leave No Dwarf Behind.mp3"; sourceTree = "<group>"; };
-		B552420028F8EE0600141B70 /* VoiceLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceLinesView.swift; sourceTree = "<group>"; };
+		B515195629B2D9A30074638E /* The Deep Dive.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Deep Dive.mp3"; sourceTree = "<group>"; };
+		B515195729B2D9A30074638E /* Hold My Beard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hold My Beard.mp3"; sourceTree = "<group>"; };
+		B515195829B2D9A30074638E /* Leave No Dwarf Behind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Leave No Dwarf Behind.mp3"; sourceTree = "<group>"; };
+		B515195929B2D9A30074638E /* March of the Brave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "March of the Brave.mp3"; sourceTree = "<group>"; };
+		B515195A29B2D9A30074638E /* The Descent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Descent.mp3"; sourceTree = "<group>"; };
+		B515195B29B2D9A30074638E /* Cowards Crossing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cowards Crossing.mp3"; sourceTree = "<group>"; };
+		B515195C29B2D9A30074638E /* The Only Way Out Is Through.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Only Way Out Is Through.mp3"; sourceTree = "<group>"; };
+		B515195D29B2D9A30074638E /* A Matter of Skill and Ammunition.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A Matter of Skill and Ammunition.mp3"; sourceTree = "<group>"; };
+		B515195E29B2D9A30074638E /* Beneath the Crust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Beneath the Crust.mp3"; sourceTree = "<group>"; };
+		B515195F29B2D9A30074638E /* Fighting the Shadows.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fighting the Shadows.mp3"; sourceTree = "<group>"; };
+		B515196029B2D9A30074638E /* Horrors of Hoxxes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Horrors of Hoxxes.mp3"; sourceTree = "<group>"; };
+		B515196129B2D9A30074638E /* Fathomless Tomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fathomless Tomb.mp3"; sourceTree = "<group>"; };
+		B515196229B2D9A30074638E /* Petrified Fury.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Petrified Fury.mp3"; sourceTree = "<group>"; };
+		B515196329B2D9A30074638E /* Theyre Here.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Theyre Here.mp3"; sourceTree = "<group>"; };
+		B515196429B2D9A30074638E /* Attack of the Glyphids.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Attack of the Glyphids.mp3"; sourceTree = "<group>"; };
+		B515196529B2D9A30074638E /* Into The Abyss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Into The Abyss.mp3"; sourceTree = "<group>"; };
+		B515196629B2D9A30074638E /* Ode to the Fallen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ode to the Fallen.mp3"; sourceTree = "<group>"; };
+		B515196729B2D9A30074638E /* Robot Getaway.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Robot Getaway.mp3"; sourceTree = "<group>"; };
+		B515196829B2D9A30074638E /* The Shadows are Moving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Shadows are Moving.mp3"; sourceTree = "<group>"; };
+		B515196929B2D9A30074638E /* Karls End.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Karls End.mp3"; sourceTree = "<group>"; };
+		B515196A29B2D9A30074638E /* I am Lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I am Lost.mp3"; sourceTree = "<group>"; };
+		B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Principle of Darkness.mp3"; sourceTree = "<group>"; };
 		B552420228F9A0B600141B70 /* MusicTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTracksView.swift; sourceTree = "<group>"; };
+		B561F85C29C4C7BD000F93C7 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B561F85D29C4C7BD000F93C7 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B561F85E29C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepDive+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B561F85F29C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepDive+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B561F86029C4C7BD000F93C7 /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B561F86129C4C7BD000F93C7 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B561F86829C4CDA3000F93C7 /* PlayerListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListDetailView.swift; sourceTree = "<group>"; };
+		B589C63A29B5769700F81707 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B589C64029B577DF00F81707 /* MonsterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
+		B589C64129B577DF00F81707 /* MonsterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
+		B589C64429B577E800F81707 /* MonstersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonstersView.swift; sourceTree = "<group>"; };
+		B589C64629B5780900F81707 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		B589C64729B5780900F81707 /* MonsterMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterMap.swift; sourceTree = "<group>"; };
+		B589C64A29B5786100F81707 /* Follow Molly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Follow Molly.mp3"; sourceTree = "<group>"; };
+		B589C64B29B5786100F81707 /* Deceived by Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Deceived by Light.mp3"; sourceTree = "<group>"; };
+		B589C64C29B5786100F81707 /* The Core Infuser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Core Infuser.mp3"; sourceTree = "<group>"; };
+		B589C64D29B5786100F81707 /* A Distant Terror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A Distant Terror.mp3"; sourceTree = "<group>"; };
+		B589C64E29B5786100F81707 /* The Last Ascent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Last Ascent.mp3"; sourceTree = "<group>"; };
+		B589C64F29B5786100F81707 /* In the Belly of the Beast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "In the Belly of the Beast.mp3"; sourceTree = "<group>"; };
+		B589C65029B5786100F81707 /* Lets Go Deeper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lets Go Deeper.mp3"; sourceTree = "<group>"; };
+		B589C65129B5786100F81707 /* RUN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RUN.mp3; sourceTree = "<group>"; };
+		B589C65229B5786100F81707 /* Echoes From The Past.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Echoes From The Past.mp3"; sourceTree = "<group>"; };
+		B589C65329B5786100F81707 /* I Welcome The Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Welcome The Darkness.mp3"; sourceTree = "<group>"; };
+		B589C65429B5786100F81707 /* Axes Out.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Axes Out.mp3"; sourceTree = "<group>"; };
+		B589C65529B5786100F81707 /* Interstellar Nightmares.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Interstellar Nightmares.mp3"; sourceTree = "<group>"; };
+		B589C65629B5786200F81707 /* Absolute Zero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Absolute Zero.mp3"; sourceTree = "<group>"; };
+		B589C65729B5786200F81707 /* Dance of the Dreadnought.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dance of the Dreadnought.mp3"; sourceTree = "<group>"; };
+		B589C66629B63B6800F81707 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		B58F20DC29BF599700623363 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveDetailView.swift; sourceTree = "<group>"; };
 		B5C9778828F8DD3700867ABB /* Deep Rock Compansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deep Rock Compansion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deep_Rock_CompansionApp.swift; sourceTree = "<group>"; };
 		B5C9778D28F8DD3700867ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5C9778F28F8DD3900867ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveView.swift; sourceTree = "<group>"; };
+		B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveListView.swift; sourceTree = "<group>"; };
+		B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepDive_Model.xcdatamodel; sourceTree = "<group>"; };
+		B5DD443529BCEECB00BD748A /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		B5DD445B29BD24F200BD748A /* DeepDiveAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveAddView.swift; sourceTree = "<group>"; };
+		B5DD447729BE582100BD748A /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		B5DD447929BE5A8C00BD748A /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		B5DD447B29BE64F200BD748A /* DeepDiveRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveRulesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +159,9 @@
 		B509ECBC29A3C6670053D5E4 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				B58F20DB29BE8B6500623363 /* core */,
+				B589C66829B63B7200F81707 /* structs */,
+				B589C64729B5780900F81707 /* MonsterMap.swift */,
 				B509ECBD29A3C68C0053D5E4 /* SongMap.swift */,
 			);
 			path = data;
@@ -93,28 +170,42 @@
 		B524D1FB2946394C0093F438 /* songs */ = {
 			isa = PBXGroup;
 			children = (
-				B524D20C294639760093F438 /* Into The Abyss.mp3 */,
-				B524D209294639730093F438 /* Attack of the Glyphids.mp3 */,
-				B524D206294639720093F438 /* The Deep Dive.mp3 */,
-				B524D2002946396D0093F438 /* Hold My Beard.mp3 */,
-				B524D208294639730093F438 /* Theyre Here.mp3 */,
-				B524D20D294639770093F438 /* Cowards Crossing.mp3 */,
-				B524D1FE2946396B0093F438 /* Petrified Fury.mp3 */,
-				B524D20A294639740093F438 /* The Descent.mp3 */,
-				B524D205294639710093F438 /* Robot Getaway.mp3 */,
-				B524D1FD2946396B0093F438 /* Horrors of Hoxxes.mp3 */,
-				B524D20E294639780093F438 /* Principle of Darkness.mp3 */,
-				B524D207294639720093F438 /* The Shadows are Moving.mp3 */,
-				B524D20F294639790093F438 /* I am Lost.mp3 */,
-				B524D203294639700093F438 /* Fighting the Shadows.mp3 */,
-				B524D2102946397A0093F438 /* Fathomless Tomb.mp3 */,
-				B524D2112946397B0093F438 /* Leave No Dwarf Behind.mp3 */,
-				B524D2012946396E0093F438 /* March of the Brave.mp3 */,
-				B524D204294639710093F438 /* Beneath the Crust.mp3 */,
-				B524D20B294639750093F438 /* Karls End.mp3 */,
-				B524D1FC2946396A0093F438 /* A Matter of Skill and Ammunition.mp3 */,
-				B524D1FF2946396D0093F438 /* The Only Way Out Is Through.mp3 */,
-				B524D2022946396F0093F438 /* Ode to the Fallen.mp3 */,
+				B515195D29B2D9A30074638E /* A Matter of Skill and Ammunition.mp3 */,
+				B515196429B2D9A30074638E /* Attack of the Glyphids.mp3 */,
+				B515195E29B2D9A30074638E /* Beneath the Crust.mp3 */,
+				B515195B29B2D9A30074638E /* Cowards Crossing.mp3 */,
+				B515196129B2D9A30074638E /* Fathomless Tomb.mp3 */,
+				B515195F29B2D9A30074638E /* Fighting the Shadows.mp3 */,
+				B515195729B2D9A30074638E /* Hold My Beard.mp3 */,
+				B515196029B2D9A30074638E /* Horrors of Hoxxes.mp3 */,
+				B515196A29B2D9A30074638E /* I am Lost.mp3 */,
+				B515196529B2D9A30074638E /* Into The Abyss.mp3 */,
+				B515196929B2D9A30074638E /* Karls End.mp3 */,
+				B515195829B2D9A30074638E /* Leave No Dwarf Behind.mp3 */,
+				B515195929B2D9A30074638E /* March of the Brave.mp3 */,
+				B515196629B2D9A30074638E /* Ode to the Fallen.mp3 */,
+				B515196229B2D9A30074638E /* Petrified Fury.mp3 */,
+				B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */,
+				B515196729B2D9A30074638E /* Robot Getaway.mp3 */,
+				B515195629B2D9A30074638E /* The Deep Dive.mp3 */,
+				B515195A29B2D9A30074638E /* The Descent.mp3 */,
+				B515195C29B2D9A30074638E /* The Only Way Out Is Through.mp3 */,
+				B515196829B2D9A30074638E /* The Shadows are Moving.mp3 */,
+				B515196329B2D9A30074638E /* Theyre Here.mp3 */,
+				B589C65329B5786100F81707 /* I Welcome The Darkness.mp3 */,
+				B589C64D29B5786100F81707 /* A Distant Terror.mp3 */,
+				B589C64A29B5786100F81707 /* Follow Molly.mp3 */,
+				B589C65029B5786100F81707 /* Lets Go Deeper.mp3 */,
+				B589C65629B5786200F81707 /* Absolute Zero.mp3 */,
+				B589C65229B5786100F81707 /* Echoes From The Past.mp3 */,
+				B589C65729B5786200F81707 /* Dance of the Dreadnought.mp3 */,
+				B589C65529B5786100F81707 /* Interstellar Nightmares.mp3 */,
+				B589C64C29B5786100F81707 /* The Core Infuser.mp3 */,
+				B589C64B29B5786100F81707 /* Deceived by Light.mp3 */,
+				B589C64F29B5786100F81707 /* In the Belly of the Beast.mp3 */,
+				B589C64E29B5786100F81707 /* The Last Ascent.mp3 */,
+				B589C65129B5786100F81707 /* RUN.mp3 */,
+				B589C65429B5786100F81707 /* Axes Out.mp3 */,
 			);
 			path = songs;
 			sourceTree = "<group>";
@@ -122,15 +213,61 @@
 		B55241FF28F8EDF400141B70 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				B552420028F8EE0600141B70 /* VoiceLinesView.swift */,
+				B5DD442D29BCDC6B00BD748A /* deepDive */,
+				B589C63F29B577D600F81707 /* monster */,
 				B552420228F9A0B600141B70 /* MusicTracksView.swift */,
+				B589C64429B577E800F81707 /* MonstersView.swift */,
+				B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		B5782DEF29C3B1B500A08E06 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */,
+				B5DD447929BE5A8C00BD748A /* PlayerListView.swift */,
+				B561F86829C4CDA3000F93C7 /* PlayerListDetailView.swift */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		B589C63F29B577D600F81707 /* monster */ = {
+			isa = PBXGroup;
+			children = (
+				B589C64129B577DF00F81707 /* MonsterDetailView.swift */,
+				B589C64029B577DF00F81707 /* MonsterListView.swift */,
+			);
+			path = monster;
+			sourceTree = "<group>";
+		};
+		B589C66829B63B7200F81707 /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				B589C64629B5780900F81707 /* Monster.swift */,
+				B589C66629B63B6800F81707 /* Song.swift */,
+				B58F20DC29BF599700623363 /* Weapon.swift */,
+			);
+			path = structs;
+			sourceTree = "<group>";
+		};
+		B58F20DB29BE8B6500623363 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				B561F85C29C4C7BD000F93C7 /* Card+CoreDataClass.swift */,
+				B561F85D29C4C7BD000F93C7 /* Card+CoreDataProperties.swift */,
+				B561F85E29C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift */,
+				B561F85F29C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift */,
+				B561F86029C4C7BD000F93C7 /* Player+CoreDataClass.swift */,
+				B561F86129C4C7BD000F93C7 /* Player+CoreDataProperties.swift */,
+			);
+			path = core;
 			sourceTree = "<group>";
 		};
 		B5C9777F28F8DD3700867ABB = {
 			isa = PBXGroup;
 			children = (
+				B589C63A29B5769700F81707 /* .gitignore */,
 				B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */,
 				B5C9778928F8DD3700867ABB /* Products */,
 			);
@@ -147,13 +284,16 @@
 		B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */ = {
 			isa = PBXGroup;
 			children = (
+				B5D9FCB229B7D58300A39BB0 /* Images */,
 				B509ECBC29A3C6670053D5E4 /* data */,
 				B524D1FB2946394C0093F438 /* songs */,
 				B55241FF28F8EDF400141B70 /* views */,
 				B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */,
+				B5DD443529BCEECB00BD748A /* Persistance.swift */,
 				B5C9778D28F8DD3700867ABB /* ContentView.swift */,
 				B5C9778F28F8DD3900867ABB /* Assets.xcassets */,
 				B5C9779128F8DD3900867ABB /* Preview Content */,
+				B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */,
 			);
 			path = "Deep Rock Compansion";
 			sourceTree = "<group>";
@@ -164,6 +304,25 @@
 				B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5D9FCB229B7D58300A39BB0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B5DD442D29BCDC6B00BD748A /* deepDive */ = {
+			isa = PBXGroup;
+			children = (
+				B5782DEF29C3B1B500A08E06 /* list */,
+				B5DD445B29BD24F200BD748A /* DeepDiveAddView.swift */,
+				B5DD447729BE582100BD748A /* PlayerView.swift */,
+				B5DD447B29BE64F200BD748A /* DeepDiveRulesView.swift */,
+				B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */,
+			);
+			path = deepDive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,30 +383,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B524D2172946397B0093F438 /* March of the Brave.mp3 in Resources */,
+				B515197429B2D9A30074638E /* Beneath the Crust.mp3 in Resources */,
+				B589C66529B5786200F81707 /* Dance of the Dreadnought.mp3 in Resources */,
 				B5C9779328F8DD3900867ABB /* Preview Assets.xcassets in Resources */,
-				B524D2142946397B0093F438 /* Petrified Fury.mp3 in Resources */,
-				B524D2152946397B0093F438 /* The Only Way Out Is Through.mp3 in Resources */,
+				B589C65F29B5786200F81707 /* RUN.mp3 in Resources */,
+				B515197A29B2D9A30074638E /* Attack of the Glyphids.mp3 in Resources */,
+				B515197F29B2D9A30074638E /* Karls End.mp3 in Resources */,
+				B589C65D29B5786200F81707 /* In the Belly of the Beast.mp3 in Resources */,
+				B589C65929B5786200F81707 /* Deceived by Light.mp3 in Resources */,
+				B589C66029B5786200F81707 /* Echoes From The Past.mp3 in Resources */,
+				B515197929B2D9A30074638E /* Theyre Here.mp3 in Resources */,
+				B515197C29B2D9A30074638E /* Ode to the Fallen.mp3 in Resources */,
+				B515196F29B2D9A30074638E /* March of the Brave.mp3 in Resources */,
+				B515197B29B2D9A30074638E /* Into The Abyss.mp3 in Resources */,
+				B515196C29B2D9A30074638E /* The Deep Dive.mp3 in Resources */,
+				B515196E29B2D9A30074638E /* Leave No Dwarf Behind.mp3 in Resources */,
+				B589C63B29B5769700F81707 /* .gitignore in Resources */,
+				B589C65A29B5786200F81707 /* The Core Infuser.mp3 in Resources */,
+				B589C65B29B5786200F81707 /* A Distant Terror.mp3 in Resources */,
+				B515197329B2D9A30074638E /* A Matter of Skill and Ammunition.mp3 in Resources */,
+				B515197829B2D9A30074638E /* Petrified Fury.mp3 in Resources */,
+				B515197D29B2D9A30074638E /* Robot Getaway.mp3 in Resources */,
+				B589C65829B5786200F81707 /* Follow Molly.mp3 in Resources */,
+				B515198129B2D9A30074638E /* Principle of Darkness.mp3 in Resources */,
+				B589C66429B5786200F81707 /* Absolute Zero.mp3 in Resources */,
+				B515198029B2D9A30074638E /* I am Lost.mp3 in Resources */,
+				B589C65C29B5786200F81707 /* The Last Ascent.mp3 in Resources */,
+				B515196D29B2D9A30074638E /* Hold My Beard.mp3 in Resources */,
+				B589C66129B5786200F81707 /* I Welcome The Darkness.mp3 in Resources */,
+				B515197729B2D9A30074638E /* Fathomless Tomb.mp3 in Resources */,
+				B515197229B2D9A30074638E /* The Only Way Out Is Through.mp3 in Resources */,
+				B515197E29B2D9A30074638E /* The Shadows are Moving.mp3 in Resources */,
+				B589C65E29B5786200F81707 /* Lets Go Deeper.mp3 in Resources */,
+				B515197529B2D9A30074638E /* Fighting the Shadows.mp3 in Resources */,
+				B515197129B2D9A30074638E /* Cowards Crossing.mp3 in Resources */,
+				B515197029B2D9A30074638E /* The Descent.mp3 in Resources */,
+				B515197629B2D9A30074638E /* Horrors of Hoxxes.mp3 in Resources */,
+				B589C66329B5786200F81707 /* Interstellar Nightmares.mp3 in Resources */,
 				B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */,
-				B524D2222946397B0093F438 /* Into The Abyss.mp3 in Resources */,
-				B524D2262946397B0093F438 /* Fathomless Tomb.mp3 in Resources */,
-				B524D2132946397B0093F438 /* Horrors of Hoxxes.mp3 in Resources */,
-				B524D2162946397B0093F438 /* Hold My Beard.mp3 in Resources */,
-				B524D2272946397B0093F438 /* Leave No Dwarf Behind.mp3 in Resources */,
-				B524D21C2946397B0093F438 /* The Deep Dive.mp3 in Resources */,
-				B524D2182946397B0093F438 /* Ode to the Fallen.mp3 in Resources */,
-				B524D2232946397B0093F438 /* Cowards Crossing.mp3 in Resources */,
-				B524D2192946397B0093F438 /* Fighting the Shadows.mp3 in Resources */,
-				B524D2212946397B0093F438 /* Karls End.mp3 in Resources */,
-				B524D21A2946397B0093F438 /* Beneath the Crust.mp3 in Resources */,
-				B524D2122946397B0093F438 /* A Matter of Skill and Ammunition.mp3 in Resources */,
-				B524D21D2946397B0093F438 /* The Shadows are Moving.mp3 in Resources */,
-				B524D2202946397B0093F438 /* The Descent.mp3 in Resources */,
-				B524D21B2946397B0093F438 /* Robot Getaway.mp3 in Resources */,
-				B524D21E2946397B0093F438 /* Theyre Here.mp3 in Resources */,
-				B524D2252946397B0093F438 /* I am Lost.mp3 in Resources */,
-				B524D21F2946397B0093F438 /* Attack of the Glyphids.mp3 in Resources */,
-				B524D2242946397B0093F438 /* Principle of Darkness.mp3 in Resources */,
+				B589C66229B5786200F81707 /* Axes Out.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,11 +432,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B561F86229C4C7BD000F93C7 /* Card+CoreDataClass.swift in Sources */,
+				B5DD447829BE582100BD748A /* PlayerView.swift in Sources */,
+				B589C64829B5780900F81707 /* Monster.swift in Sources */,
+				B589C64929B5780900F81707 /* MonsterMap.swift in Sources */,
+				B561F86929C4CDA3000F93C7 /* PlayerListDetailView.swift in Sources */,
+				B561F86729C4C7BD000F93C7 /* Player+CoreDataProperties.swift in Sources */,
+				B5DD447C29BE64F200BD748A /* DeepDiveRulesView.swift in Sources */,
+				B561F86329C4C7BD000F93C7 /* Card+CoreDataProperties.swift in Sources */,
+				B561F86429C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift in Sources */,
+				B561F86529C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift in Sources */,
+				B589C64329B577DF00F81707 /* MonsterDetailView.swift in Sources */,
 				B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */,
+				B589C66729B63B6800F81707 /* Song.swift in Sources */,
+				B561F86629C4C7BD000F93C7 /* Player+CoreDataClass.swift in Sources */,
 				B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */,
-				B552420128F8EE0600141B70 /* VoiceLinesView.swift in Sources */,
+				B589C64529B577E800F81707 /* MonstersView.swift in Sources */,
+				B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */,
 				B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */,
+				B5DD445C29BD24F200BD748A /* DeepDiveAddView.swift in Sources */,
+				B58F20DD29BF599700623363 /* Weapon.swift in Sources */,
+				B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */,
 				B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */,
+				B5DD447A29BE5A8C00BD748A /* PlayerListView.swift in Sources */,
+				B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */,
+				B589C64229B577DF00F81707 /* MonsterListView.swift in Sources */,
+				B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */,
+				B5BD1D2D29C3BE80007271CC /* DeepDiveDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +590,8 @@
 				DEVELOPMENT_TEAM = 6M38R97L4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deep Rock Companion";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,9 +601,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,6 +624,8 @@
 				DEVELOPMENT_TEAM = 6M38R97L4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Deep Rock Companion";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,9 +635,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,6 +669,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */,
+			);
+			currentVersion = B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */;
+			path = DeepDive_Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5C9778028F8DD3700867ABB /* Project object */;
 }

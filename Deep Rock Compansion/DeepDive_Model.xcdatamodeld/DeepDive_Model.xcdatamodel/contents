@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Card" representedClassName="Card" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="primaryUpgrage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="primaryUpgrages" inverseEntity="Player"/>
+        <relationship name="rockInStone" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="rockInStones" inverseEntity="Player"/>
+        <relationship name="secondaryUpgrages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="secondaryUpgrades" inverseEntity="Player"/>
+        <relationship name="throwables" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="throwables" inverseEntity="Player"/>
+        <relationship name="utilities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="utilities" inverseEntity="Player"/>
+    </entity>
+    <entity name="DeepDive" representedClassName="DeepDive" syncable="YES">
+        <attribute name="gold" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastSaved" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="nitra" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="deepDive" inverseEntity="Player"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="classType" attributeType="String"/>
+        <attribute name="health" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="playerName" attributeType="String"/>
+        <attribute name="primaryAmmo" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="primaryGun" optional="YES" attributeType="String"/>
+        <attribute name="secondaryAmmo" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="secondaryGun" optional="YES" attributeType="String"/>
+        <attribute name="secondaryOverclocked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="deepDive" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeepDive" inverseName="players" inverseEntity="DeepDive"/>
+        <relationship name="primaryUpgrages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="primaryUpgrage" inverseEntity="Card"/>
+        <relationship name="rockInStones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="rockInStone" inverseEntity="Card"/>
+        <relationship name="secondaryUpgrades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="secondaryUpgrages" inverseEntity="Card"/>
+        <relationship name="throwables" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="throwables" inverseEntity="Card"/>
+        <relationship name="utilities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="utilities" inverseEntity="Card"/>
+    </entity>
+</model>
