@@ -141,12 +141,14 @@ struct PlayerView: View {
                         Text(weapon).tag(weapon)
                     }
                 }.pickerStyle(.menu)
-                Stepper(value: $secondaryGunAmmo, in: 0...5) {
+                Stepper(value: $secondaryGunAmmo, in: 0...(secondaryGunOverclocked ? 5 : 3)) {
                     HStack{
                         Text("Ammo: ")
                         Text("\(secondaryGunAmmo)").bold()
                     }
-                }
+                }.onChange(of: secondaryGunOverclocked, perform: {newval in
+                    if(secondaryGunAmmo > 3){ secondaryGunAmmo = 3 }
+                })
                 Toggle(isOn: $secondaryGunOverclocked) {
                     Text("Overclocked")
                 }
