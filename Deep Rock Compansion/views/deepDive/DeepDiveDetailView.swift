@@ -16,8 +16,13 @@ struct DeepDiveDetailView: View {
     
     @State var presentAddPlayer = false
     
-    @Binding var players: [Player]
+    @State var players: [Player]
     @State var player: Player? = nil
+    
+    init(deepDive: DeepDive) {
+        self._deepDive = deepDive.deepDiveBinding
+        self._players = State(initialValue: deepDive.playersArray)
+    }
     
     var body: some View {
         Form {
@@ -58,7 +63,7 @@ struct DeepDiveDetailView: View {
                     })
                     List {
                         ForEach(deepDive.playersArray){ player in
-                            PlayerListView(player: player)
+                            PlayerListView(player: player.playerBinding)
                                 .onTapGesture {
                                     self.player = player
                                     presentAddPlayer = true

@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct Monster {
+struct Monster: Hashable, Identifiable, Comparable {
+    static func < (lhs: Monster, rhs: Monster) -> Bool {
+        lhs.id < rhs.id
+    }
+    
+    var id: Int
     var name: String
     var description: String
     var image: String
