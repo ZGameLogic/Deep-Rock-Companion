@@ -52,6 +52,12 @@ struct MonsterDetailView: View {
                 }
                 Divider()
             }
+            if(monster.rockInStone){
+                Section(header: Text("Rock in Stone Card").font(.title2)) {
+                    Text("Killing this monster grants a rock in stone card").padding()
+                }
+                Divider()
+            }
             Text(monster.description).padding()
         }
     }
