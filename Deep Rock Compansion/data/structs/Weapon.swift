@@ -47,8 +47,10 @@ struct Data {
     
     let grenades: [String] = [
         "None",
-        "Incendiary/Frag Grenade",
+        "Incendiary",
+        "Frag Grenade",
         "Plasma Grenade",
+        "Phosphor",
         "Impact Axe",
         "Inhibitor Field Generator",
         "L.U.R.E. Grenade",
