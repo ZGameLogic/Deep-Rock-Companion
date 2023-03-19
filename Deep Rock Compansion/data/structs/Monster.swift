@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct Monster {
+struct Monster: Hashable, Identifiable, Comparable {
+    static func < (lhs: Monster, rhs: Monster) -> Bool {
+        lhs.id < rhs.id
+    }
+    
+    var id: Int
     var name: String
     var description: String
     var image: String
@@ -18,4 +23,13 @@ struct Monster {
     var specials: [String]
     var resistences: [String]
     var rockInStone: Bool
+    
+    var hasSpecialdamage: Bool {
+        for die in damageDie {
+            if(die == "HitDie") {
+                return true
+            }
+        }
+        return false
+    }
 }

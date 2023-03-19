@@ -25,7 +25,7 @@ struct DeepDiveView: View {
                 ForEach(deepDives) { dive in
                     if(searched == "" || dive.name.contains(searched)){
                         NavigationLink(destination: {
-                            DeepDiveDetailView(deepDive: dive.deepDiveBinding, players: dive.playersBinding)
+                            DeepDiveDetailView(deepDive: dive)
                         }, label: {DeepDiveListView(deepDive: dive.deepDiveBinding)})
                     }
                 }.onDelete(perform: deleteDive)

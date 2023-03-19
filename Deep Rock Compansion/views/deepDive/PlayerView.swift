@@ -15,12 +15,13 @@ struct PlayerView: View {
     
     @Binding var players: [Player]
     @Binding var presenting: Bool
-    @State var player: Player? = nil
+    @Binding var player: Player
     
     @ObservedObject var model = AddPlayerViewModel()
     
     @State var errorMessage = ""
     @State var showError = false
+    @State var new = false
     
     @State var playerName = ""
     @State var classType = startingClass
@@ -62,7 +63,13 @@ struct PlayerView: View {
             if(player.secondaryUpgrades!.count >= 2){
                 sUpgradeSlotTwo = player.secondaryUpgradesArray[1].name!
             }
-            self.player = player
+            self._player = player.playerBinding
+        } else {
+            new = true
+            var player = Player()
+            self._player = Binding(get: {player}, set: {
+                player = $0
+            })
         }
         self._presenting = presenting
         if(player != nil){
@@ -76,7 +83,7 @@ struct PlayerView: View {
     }
     
     var body: some View {
-        Text("\(player == nil ? "Add" : "Update") Player").font(.title).padding()
+        Text("\(new ? "Add" : "Update") Player").font(.title).padding()
         Form {
             Section("General", content: {
                 TextField("Player name", text: $playerName)
@@ -215,7 +222,7 @@ struct PlayerView: View {
             Button(action: validate, label: {
                 HStack{
                     Spacer()
-                    Text("\(player == nil ? "Create" : "Update") Player")
+                    Text("\(new ? "Create" : "Update") Player")
                     Spacer()
                 }
             })
@@ -246,26 +253,24 @@ struct PlayerView: View {
     }
     
     private func save(){
-        let new = (player == nil)
         if(new){
             player = Player(context: viewContext)
         }
-        if let player {
-            player.playerName = playerName
-            player.health = Int16(health)
-            player.classType = classType
-            player.primaryGun = primaryGun
-            player.secondaryGun = secondaryGun
-            player.primaryAmmo = Int16(primaryGunAmmo)
-            player.secondaryAmmo = Int16(secondaryGunAmmo)
-            player.secondaryOverclocked = secondaryGunOverclocked
-            player.setThrowables(throwables: throwablesToCardArray())
-            player.setRockInStones(risCards: RISToCardArray())
-            player.setPrimaryUpgrages(primaryUpgrades: pUpgradeToCardArray())
-            player.setSecondaryUpgrades(secondaryUpgrades: sUpgradeToCardArray())
-        }
+        player.playerName = playerName
+        player.health = Int16(health)
+        player.classType = classType
+        player.primaryGun = primaryGun
+        player.secondaryGun = secondaryGun
+        player.primaryAmmo = Int16(primaryGunAmmo)
+        player.secondaryAmmo = Int16(secondaryGunAmmo)
+        player.secondaryOverclocked = secondaryGunOverclocked
+        player.setThrowables(throwables: throwablesToCardArray())
+        player.setRockInStones(risCards: RISToCardArray())
+        player.setPrimaryUpgrages(primaryUpgrades: pUpgradeToCardArray())
+        player.setSecondaryUpgrades(secondaryUpgrades: sUpgradeToCardArray())
+        
         if(new){
-            players.append(player!)
+            players.append(player)
         }
         presenting = false
     }

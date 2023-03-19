@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerListView: View {
     
-    let player: Player
+    @Binding var player: Player
     
     var body: some View {
         VStack {

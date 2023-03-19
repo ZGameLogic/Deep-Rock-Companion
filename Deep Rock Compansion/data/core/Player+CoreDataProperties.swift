@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-
+import SwiftUI
 
 extension Player {
 
@@ -30,6 +30,25 @@ extension Player {
     @NSManaged public var secondaryUpgrades: NSSet?
     @NSManaged public var throwables: NSSet?
     @NSManaged public var utilities: NSSet?
+    
+    public var playerBinding: Binding<Player> {
+        Binding.init(get: {self}, set: {value in
+            self.classType = value.classType
+            self.health = value.health
+            self.playerName = value.playerName
+            self.primaryAmmo = value.primaryAmmo
+            self.primaryGun = value.primaryGun
+            self.secondaryAmmo = value.secondaryAmmo
+            self.secondaryGun = value.secondaryGun
+            self.secondaryOverclocked = value.secondaryOverclocked
+            self.deepDive = value.deepDive
+            self.primaryUpgrages = value.primaryUpgrages
+            self.rockInStones = value.rockInStones
+            self.secondaryUpgrades = value.secondaryUpgrades
+            self.throwables = value.throwables
+            self.utilities = value.utilities
+        })
+    }
 
     public var throwablesArray: [Card] {
         let set = throwables as? Set<Card> ?? []

@@ -38,15 +38,23 @@ struct MonsterDetailView: View {
                             Image(die).resizable().scaledToFit().frame(width: 40, height: 40)
                         }
                     }
-                    HStack {
-                        Image("Special").resizable().scaledToFit().frame(width: 40, height: 40)
-                        Text("=").font(.title)
-                        if(!monster.specials.isEmpty){
-                            ForEach (monster.specials, id: \.self){ special in
-                                Image(special).resizable().scaledToFit().frame(width: 40, height: 40)
-                            }
-                        } else { Text("None") }
-                    }.padding([.trailing]).background(Color.gray).cornerRadius(5)
+                    if(monster.hasSpecialdamage){
+                        HStack {
+                            Image("Special").resizable().scaledToFit().frame(width: 40, height: 40)
+                            Text("=").font(.title)
+                            if(!monster.specials.isEmpty){
+                                ForEach (monster.specials, id: \.self){ special in
+                                    Image(special).resizable().scaledToFit().frame(width: 40, height: 40)
+                                }
+                            } else { Text("None") }
+                        }.padding([.trailing]).background(Color.gray).cornerRadius(5)
+                    }
+                }
+                Divider()
+            }
+            if(monster.rockInStone){
+                Section(header: Text("Rock in Stone Card").font(.title2)) {
+                    Text("Killing this monster grants a rock in stone card").padding()
                 }
                 Divider()
             }

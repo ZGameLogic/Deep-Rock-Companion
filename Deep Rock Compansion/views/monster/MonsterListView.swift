@@ -16,7 +16,11 @@ struct MonsterListView: View {
             HStack{
                 VStack {
                     Image(monster.image).resizable().scaledToFit().frame(width: 100, height: 100)
-                    Text(monster.name).font(.headline).frame(width: 85, height: 50)
+                    if(monster.rockInStone){
+                        Text(monster.name).font(.headline).frame(width: 85, height: 50).foregroundColor(.orange)
+                    } else {
+                        Text(monster.name).font(.headline).frame(width: 85, height: 50)
+                    }
                 }
                 VStack{
                     if(monster.resistences.count < 4){

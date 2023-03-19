@@ -18,8 +18,8 @@ struct DeepDiveListView: View {
                 Spacer()
             }
             HStack{
-                ForEach(deepDive.playersArray){ player in
-                    Text(player.playerName!)
+                ForEach(deepDive.playersArray){
+                    Text($0.playerBinding.playerName.wrappedValue!)
                 }
                 Spacer()
             }

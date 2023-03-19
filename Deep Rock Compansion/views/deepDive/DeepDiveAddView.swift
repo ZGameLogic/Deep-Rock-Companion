@@ -54,7 +54,7 @@ struct DeepDiveAddView: View {
                 })
                 List {
                     ForEach(players){ player in
-                        PlayerListView(player: player)
+                        PlayerListView(player: player.playerBinding)
                             .onTapGesture {
                                 self.player = player
                                 presentAddPlayer = true
