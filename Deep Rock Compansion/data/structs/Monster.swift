@@ -23,4 +23,13 @@ struct Monster: Hashable, Identifiable, Comparable {
     var specials: [String]
     var resistences: [String]
     var rockInStone: Bool
+    
+    var hasSpecialdamage: Bool {
+        for die in damageDie {
+            if(die == "HitDie") {
+                return true
+            }
+        }
+        return false
+    }
 }
