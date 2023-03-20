@@ -122,7 +122,7 @@ struct PlayerView: View {
                         Stepper(label: {
                             Group {
                                 Image(pUpgradeSlotOne).resizable().scaledToFit().frame(width: 68, height: 68)
-                            }.frame(width: 70, height: 70).background(Color(red: 0.7, green: 0.7, blue: 0.7)).cornerRadius(10)
+                            }.frame(width: 70, height: 70).background(Color("upgradeBackground")).cornerRadius(10)
                         },onIncrement: {
                             pUpgradeSlotOne = Data().upgradeScroll(current: pUpgradeSlotOne, amount: 1)
                         }, onDecrement: {
@@ -132,7 +132,7 @@ struct PlayerView: View {
                         Stepper(label: {
                             Group {
                                 Image(pUpgradeSlotTwo).resizable().scaledToFit().frame(width: 68, height: 68)
-                            }.frame(width: 70, height: 70).background(Color(red: 0.7, green: 0.7, blue: 0.7)).cornerRadius(10)
+                            }.frame(width: 70, height: 70).background(Color("upgradeBackground")).cornerRadius(10)
                         },onIncrement: {
                             pUpgradeSlotTwo = Data().upgradeScroll(current: pUpgradeSlotTwo, amount: 1)
                         }, onDecrement: {
