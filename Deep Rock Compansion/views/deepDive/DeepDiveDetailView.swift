@@ -55,8 +55,8 @@ struct DeepDiveDetailView: View {
                 }
             })
             
-            Section("Players", content: {
-                if(editMode!.wrappedValue.isEditing){
+            if(editMode!.wrappedValue.isEditing){
+                Section("Players", content: {
                     Button("Add player", action: {
                         player = nil
                         presentAddPlayer = true
@@ -70,12 +70,15 @@ struct DeepDiveDetailView: View {
                                 }
                         }.onDelete(perform: deletePlayer)
                     }
-                } else {
-                    ForEach (deepDive.playersArray) {player in
+                })
+            } else {
+                ForEach (deepDive.playersArray) {player in
+                    Section("Player \(player.playerName!)", content: {
                         PlayerListDetailView(player: player)
-                    }
+                    })
                 }
-            })
+            }
+            
             
             Section("Notes", content: {
                 if(editMode!.wrappedValue.isEditing){
@@ -92,6 +95,11 @@ struct DeepDiveDetailView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 EditButton()
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    print("send it")
+                }, label: {Label("", systemImage: "square.and.arrow.up")}).disabled(true)
             }
         }.onChange(of: editMode!.wrappedValue.isEditing, perform: {newVal in
             if(!newVal){
