@@ -12,7 +12,7 @@ struct MusicTracksView: View {
     
     let songMap = SongMap()
     
-    @State var audioPlayer: AVAudioPlayer!
+    @State var audioPlayer: AVPlayer!
     @State var selectedType = "game"
     @State var specialType = "swarm"
     @State var gameType = "pregame"
@@ -113,7 +113,7 @@ struct MusicTracksView: View {
     }
     
     func changeVolume() {
-        audioPlayer.setVolume(volume, fadeDuration: 0.0)
+        audioPlayer.volume = volume
     }
     
     func scroll(amount: Int) {
@@ -144,12 +144,20 @@ struct MusicTracksView: View {
     }
     
     func changeSong(song: Song) {
-        let sound = Bundle.main.path(forResource: song.file, ofType: "mp3")
+        let sound = Bundle.main.url(forResource: song.file, withExtension: "mp3")
         if(playing){
-            audioPlayer.stop()
+            audioPlayer.pause()
         }
-        self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-        audioPlayer.numberOfLoops = 100000
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowAirPlay])
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print(error)
+        }
+        audioPlayer = AVPlayer(url: sound!)
+        audioPlayer.volume = 1.0
+        audioPlayer.rate = 1.0
         nowPlaying = song.file
         if(playing){
             audioPlayer.play()
