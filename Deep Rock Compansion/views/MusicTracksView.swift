@@ -146,7 +146,7 @@ struct MusicTracksView: View {
     func changeSong(song: Song) {
         let sound = Bundle.main.url(forResource: song.file, withExtension: "mp3")
         if(playing){
-            audioPlayer.pause()
+            pause()
         }
         do {
             try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowAirPlay])
@@ -157,10 +157,10 @@ struct MusicTracksView: View {
         }
         audioPlayer = AVPlayer(url: sound!)
         audioPlayer.volume = 1.0
-        audioPlayer.rate = 1.0
+        // audioPlayer.rate = 0.0
         nowPlaying = song.file
         if(playing){
-            audioPlayer.play()
+            play()
         }
     }
     
