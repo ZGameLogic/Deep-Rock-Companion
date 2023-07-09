@@ -53,7 +53,8 @@ struct SongMap {
             Song(file: "In the Belly of the Beast", type: "swarm"),
             Song(file: "The Last Ascent", type: "extraction"),
             Song(file: "RUN", type: "swarm"),
-            Song(file: "Axes Out", type: "swarm")
+            Song(file: "Axes Out", type: "swarm"),
+            Song(file: "Journey Of The Prospector", type: "ambiance")
         ]
     }
     

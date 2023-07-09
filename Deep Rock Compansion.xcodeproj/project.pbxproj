@@ -61,6 +61,7 @@
 		B589C66729B63B6800F81707 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C66629B63B6800F81707 /* Song.swift */; };
 		B58F20DD29BF599700623363 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F20DC29BF599700623363 /* Weapon.swift */; };
 		B5BD1D2D29C3BE80007271CC /* DeepDiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */; };
+		B5C78B372A5A3FCD00044FDE /* Journey Of The Prospector.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5C78B362A5A3FCD00044FDE /* Journey Of The Prospector.mp3 */; };
 		B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */; };
 		B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778D28F8DD3700867ABB /* ContentView.swift */; };
 		B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9778F28F8DD3900867ABB /* Assets.xcassets */; };
@@ -100,6 +101,7 @@
 		B515196A29B2D9A30074638E /* I am Lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I am Lost.mp3"; sourceTree = "<group>"; };
 		B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Principle of Darkness.mp3"; sourceTree = "<group>"; };
 		B552420228F9A0B600141B70 /* MusicTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTracksView.swift; sourceTree = "<group>"; };
+		B555D61F29D5D44B007F20B3 /* Deep-Rock-Compansion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Deep-Rock-Compansion-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B561F85C29C4C7BD000F93C7 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B561F85D29C4C7BD000F93C7 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B561F85E29C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepDive+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		B589C66629B63B6800F81707 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		B58F20DC29BF599700623363 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveDetailView.swift; sourceTree = "<group>"; };
+		B5C78B362A5A3FCD00044FDE /* Journey Of The Prospector.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Journey Of The Prospector.mp3"; sourceTree = "<group>"; };
 		B5C9778828F8DD3700867ABB /* Deep Rock Compansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deep Rock Compansion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deep_Rock_CompansionApp.swift; sourceTree = "<group>"; };
 		B5C9778D28F8DD3700867ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +173,7 @@
 		B524D1FB2946394C0093F438 /* songs */ = {
 			isa = PBXGroup;
 			children = (
+				B5C78B362A5A3FCD00044FDE /* Journey Of The Prospector.mp3 */,
 				B515195D29B2D9A30074638E /* A Matter of Skill and Ammunition.mp3 */,
 				B515196429B2D9A30074638E /* Attack of the Glyphids.mp3 */,
 				B515195E29B2D9A30074638E /* Beneath the Crust.mp3 */,
@@ -284,6 +288,7 @@
 		B5C9778A28F8DD3700867ABB /* Deep Rock Compansion */ = {
 			isa = PBXGroup;
 			children = (
+				B555D61F29D5D44B007F20B3 /* Deep-Rock-Compansion-Info.plist */,
 				B5D9FCB229B7D58300A39BB0 /* Images */,
 				B509ECBC29A3C6670053D5E4 /* data */,
 				B524D1FB2946394C0093F438 /* songs */,
@@ -413,6 +418,7 @@
 				B589C66129B5786200F81707 /* I Welcome The Darkness.mp3 in Resources */,
 				B515197729B2D9A30074638E /* Fathomless Tomb.mp3 in Resources */,
 				B515197229B2D9A30074638E /* The Only Way Out Is Through.mp3 in Resources */,
+				B5C78B372A5A3FCD00044FDE /* Journey Of The Prospector.mp3 in Resources */,
 				B515197E29B2D9A30074638E /* The Shadows are Moving.mp3 in Resources */,
 				B589C65E29B5786200F81707 /* Lets Go Deeper.mp3 in Resources */,
 				B515197529B2D9A30074638E /* Fighting the Shadows.mp3 in Resources */,
@@ -585,11 +591,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Deep Rock Compansion/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M38R97L4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Deep-Rock-Compansion-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deep Rock Companion";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -601,7 +608,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
+				MARKETING_VERSION = 1.4.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -619,11 +626,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Deep Rock Compansion/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M38R97L4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Deep-Rock-Compansion-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Deep Rock Companion";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -635,7 +643,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
+				MARKETING_VERSION = 1.4.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
