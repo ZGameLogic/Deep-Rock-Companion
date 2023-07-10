@@ -48,7 +48,6 @@ class DeepRockAVPlayer: ObservableObject {
             print(error)
         }
         audioPlayer.replaceCurrentItem(with: AVPlayerItem(url: sound!))
-        audioPlayer.volume = 1.0
         nowPlaying = song.file
         print(nowPlaying)
     }
