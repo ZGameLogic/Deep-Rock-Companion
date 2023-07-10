@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B503E40A2A5C4D7A00CFAC6F /* DeepRockAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503E4092A5C4D7A00CFAC6F /* DeepRockAVPlayer.swift */; };
 		B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509ECBD29A3C68C0053D5E4 /* SongMap.swift */; };
 		B515196C29B2D9A30074638E /* The Deep Dive.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195629B2D9A30074638E /* The Deep Dive.mp3 */; };
 		B515196D29B2D9A30074638E /* Hold My Beard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515195729B2D9A30074638E /* Hold My Beard.mp3 */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B503E4092A5C4D7A00CFAC6F /* DeepRockAVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepRockAVPlayer.swift; sourceTree = "<group>"; };
 		B509ECBD29A3C68C0053D5E4 /* SongMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongMap.swift; sourceTree = "<group>"; };
 		B515195629B2D9A30074638E /* The Deep Dive.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Deep Dive.mp3"; sourceTree = "<group>"; };
 		B515195729B2D9A30074638E /* Hold My Beard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hold My Beard.mp3"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				B589C66829B63B7200F81707 /* structs */,
 				B589C64729B5780900F81707 /* MonsterMap.swift */,
 				B509ECBD29A3C68C0053D5E4 /* SongMap.swift */,
+				B503E4092A5C4D7A00CFAC6F /* DeepRockAVPlayer.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				B589C64529B577E800F81707 /* MonstersView.swift in Sources */,
 				B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */,
 				B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */,
+				B503E40A2A5C4D7A00CFAC6F /* DeepRockAVPlayer.swift in Sources */,
 				B5DD445C29BD24F200BD748A /* DeepDiveAddView.swift in Sources */,
 				B58F20DD29BF599700623363 /* Weapon.swift in Sources */,
 				B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */,
@@ -608,7 +612,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.4;
+				MARKETING_VERSION = 1.4.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -643,7 +647,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.4;
+				MARKETING_VERSION = 1.4.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "zgamelogic.Deep-Rock-Compansion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

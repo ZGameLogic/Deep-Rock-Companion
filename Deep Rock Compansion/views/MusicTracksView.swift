@@ -12,11 +12,10 @@ struct MusicTracksView: View {
     
     let songMap = SongMap()
     
-    @State var audioPlayer: AVPlayer!
+    @StateObject var audioPlayer: DeepRockAVPlayer = DeepRockAVPlayer()
     @State var selectedType = "game"
     @State var specialType = "swarm"
     @State var gameType = "pregame"
-    @State var nowPlaying = ""
     @State var volume: Float = 1.0
     
     @State var playing = false
@@ -56,11 +55,11 @@ struct MusicTracksView: View {
                     Divider().overlay(.gray)
                     Group {
                         Text("Now playing").padding([.top], 20)
-                        Text(nowPlaying).font(.headline)
+                        Text(audioPlayer.nowPlaying).font(.headline)
                         
                         HStack {
                             Button(action: {
-                                scroll(amount: -1)
+                                audioPlayer.scroll(amount: -1)
                             }) {
                                 Image(systemName: "backward.circle.fill").resizable()
                                     .frame(width: 50, height: 50)
@@ -84,7 +83,7 @@ struct MusicTracksView: View {
                                 }
                             }
                             Button(action: {
-                                scroll(amount: 1)
+                                audioPlayer.scroll(amount: 1)
                             }) {
                                 Image(systemName: "forward.circle.fill").resizable()
                                     .frame(width: 50, height: 50)
@@ -113,14 +112,7 @@ struct MusicTracksView: View {
     }
     
     func changeVolume() {
-        audioPlayer.volume = volume
-    }
-    
-    func scroll(amount: Int) {
-        let selection = getSelectedType()
-        let currentIndex = songMap.getIndex(songName: nowPlaying, songType: selection)
-        let newSong = songMap.scroll(currentIndex: currentIndex, scrollAmount: amount, songType: selection)
-        changeSong(song: newSong)
+        audioPlayer.setVolume(volume: volume)
     }
     
     func play() {
@@ -144,22 +136,11 @@ struct MusicTracksView: View {
     }
     
     func changeSong(song: Song) {
-        let sound = Bundle.main.url(forResource: song.file, withExtension: "mp3")
         if(playing){
             pause()
         }
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default, options: [.mixWithOthers, .allowAirPlay])
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, options: [])
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
-            print(error)
-        }
-        audioPlayer = AVPlayer(url: sound!)
-        audioPlayer.volume = 1.0
-        // audioPlayer.rate = 0.0
-        nowPlaying = song.file
-        if(playing){
+        audioPlayer.changeSong(song: song)
+        if(!playing){
             play()
         }
     }
@@ -167,6 +148,7 @@ struct MusicTracksView: View {
     func changeSong(){
         let selection = getSelectedType()
         let song = songMap.getSongByType(songType: selection)
+        audioPlayer.type = selection
         changeSong(song: song)
     }
 }
