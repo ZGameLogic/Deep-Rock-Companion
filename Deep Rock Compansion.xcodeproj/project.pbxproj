@@ -31,19 +31,9 @@
 		B515197F29B2D9A30074638E /* Karls End.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196929B2D9A30074638E /* Karls End.mp3 */; };
 		B515198029B2D9A30074638E /* I am Lost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196A29B2D9A30074638E /* I am Lost.mp3 */; };
 		B515198129B2D9A30074638E /* Principle of Darkness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */; };
-		B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552420228F9A0B600141B70 /* MusicTracksView.swift */; };
-		B561F86229C4C7BD000F93C7 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85C29C4C7BD000F93C7 /* Card+CoreDataClass.swift */; };
-		B561F86329C4C7BD000F93C7 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85D29C4C7BD000F93C7 /* Card+CoreDataProperties.swift */; };
-		B561F86429C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85E29C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift */; };
-		B561F86529C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F85F29C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift */; };
-		B561F86629C4C7BD000F93C7 /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F86029C4C7BD000F93C7 /* Player+CoreDataClass.swift */; };
-		B561F86729C4C7BD000F93C7 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F86129C4C7BD000F93C7 /* Player+CoreDataProperties.swift */; };
-		B561F86929C4CDA3000F93C7 /* PlayerListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561F86829C4CDA3000F93C7 /* PlayerListDetailView.swift */; };
+		B540FFA22B0D8CC100E9D313 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540FFA12B0D8CC100E9D313 /* Song.swift */; };
+		B540FFA42B0D8D2400E9D313 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540FFA32B0D8D2400E9D313 /* Monster.swift */; };
 		B589C63B29B5769700F81707 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B589C63A29B5769700F81707 /* .gitignore */; };
-		B589C64229B577DF00F81707 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64029B577DF00F81707 /* MonsterListView.swift */; };
-		B589C64329B577DF00F81707 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64129B577DF00F81707 /* MonsterDetailView.swift */; };
-		B589C64529B577E800F81707 /* MonstersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64429B577E800F81707 /* MonstersView.swift */; };
-		B589C64829B5780900F81707 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64629B5780900F81707 /* Monster.swift */; };
 		B589C64929B5780900F81707 /* MonsterMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C64729B5780900F81707 /* MonsterMap.swift */; };
 		B589C65829B5786200F81707 /* Follow Molly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64A29B5786100F81707 /* Follow Molly.mp3 */; };
 		B589C65929B5786200F81707 /* Deceived by Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C64B29B5786100F81707 /* Deceived by Light.mp3 */; };
@@ -59,22 +49,12 @@
 		B589C66329B5786200F81707 /* Interstellar Nightmares.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65529B5786100F81707 /* Interstellar Nightmares.mp3 */; };
 		B589C66429B5786200F81707 /* Absolute Zero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65629B5786200F81707 /* Absolute Zero.mp3 */; };
 		B589C66529B5786200F81707 /* Dance of the Dreadnought.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B589C65729B5786200F81707 /* Dance of the Dreadnought.mp3 */; };
-		B589C66729B63B6800F81707 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589C66629B63B6800F81707 /* Song.swift */; };
-		B58F20DD29BF599700623363 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F20DC29BF599700623363 /* Weapon.swift */; };
-		B5BD1D2D29C3BE80007271CC /* DeepDiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */; };
 		B5C78B372A5A3FCD00044FDE /* Journey Of The Prospector.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5C78B362A5A3FCD00044FDE /* Journey Of The Prospector.mp3 */; };
 		B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */; };
 		B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9778D28F8DD3700867ABB /* ContentView.swift */; };
 		B5C9779028F8DD3900867ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9778F28F8DD3900867ABB /* Assets.xcassets */; };
 		B5C9779328F8DD3900867ABB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */; };
-		B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */; };
-		B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */; };
 		B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443229BCDD0400BD748A /* DeepDive_Model.xcdatamodeld */; };
-		B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD443529BCEECB00BD748A /* Persistance.swift */; };
-		B5DD445C29BD24F200BD748A /* DeepDiveAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD445B29BD24F200BD748A /* DeepDiveAddView.swift */; };
-		B5DD447829BE582100BD748A /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447729BE582100BD748A /* PlayerView.swift */; };
-		B5DD447A29BE5A8C00BD748A /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447929BE5A8C00BD748A /* PlayerListView.swift */; };
-		B5DD447C29BE64F200BD748A /* DeepDiveRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DD447B29BE64F200BD748A /* DeepDiveRulesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,20 +82,10 @@
 		B515196929B2D9A30074638E /* Karls End.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Karls End.mp3"; sourceTree = "<group>"; };
 		B515196A29B2D9A30074638E /* I am Lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I am Lost.mp3"; sourceTree = "<group>"; };
 		B515196B29B2D9A30074638E /* Principle of Darkness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Principle of Darkness.mp3"; sourceTree = "<group>"; };
-		B552420228F9A0B600141B70 /* MusicTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTracksView.swift; sourceTree = "<group>"; };
+		B540FFA12B0D8CC100E9D313 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		B540FFA32B0D8D2400E9D313 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = structs/Monster.swift; sourceTree = "<group>"; };
 		B555D61F29D5D44B007F20B3 /* Deep-Rock-Compansion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Deep-Rock-Compansion-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B561F85C29C4C7BD000F93C7 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B561F85D29C4C7BD000F93C7 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B561F85E29C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepDive+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B561F85F29C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeepDive+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B561F86029C4C7BD000F93C7 /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B561F86129C4C7BD000F93C7 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B561F86829C4CDA3000F93C7 /* PlayerListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListDetailView.swift; sourceTree = "<group>"; };
 		B589C63A29B5769700F81707 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B589C64029B577DF00F81707 /* MonsterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
-		B589C64129B577DF00F81707 /* MonsterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
-		B589C64429B577E800F81707 /* MonstersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonstersView.swift; sourceTree = "<group>"; };
-		B589C64629B5780900F81707 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		B589C64729B5780900F81707 /* MonsterMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterMap.swift; sourceTree = "<group>"; };
 		B589C64A29B5786100F81707 /* Follow Molly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Follow Molly.mp3"; sourceTree = "<group>"; };
 		B589C64B29B5786100F81707 /* Deceived by Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Deceived by Light.mp3"; sourceTree = "<group>"; };
@@ -131,23 +101,13 @@
 		B589C65529B5786100F81707 /* Interstellar Nightmares.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Interstellar Nightmares.mp3"; sourceTree = "<group>"; };
 		B589C65629B5786200F81707 /* Absolute Zero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Absolute Zero.mp3"; sourceTree = "<group>"; };
 		B589C65729B5786200F81707 /* Dance of the Dreadnought.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dance of the Dreadnought.mp3"; sourceTree = "<group>"; };
-		B589C66629B63B6800F81707 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		B58F20DC29BF599700623363 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveDetailView.swift; sourceTree = "<group>"; };
 		B5C78B362A5A3FCD00044FDE /* Journey Of The Prospector.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Journey Of The Prospector.mp3"; sourceTree = "<group>"; };
 		B5C9778828F8DD3700867ABB /* Deep Rock Compansion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deep Rock Compansion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deep_Rock_CompansionApp.swift; sourceTree = "<group>"; };
 		B5C9778D28F8DD3700867ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5C9778F28F8DD3900867ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveView.swift; sourceTree = "<group>"; };
-		B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveListView.swift; sourceTree = "<group>"; };
 		B5DD443329BCDD0400BD748A /* DeepDive_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepDive_Model.xcdatamodel; sourceTree = "<group>"; };
-		B5DD443529BCEECB00BD748A /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
-		B5DD445B29BD24F200BD748A /* DeepDiveAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveAddView.swift; sourceTree = "<group>"; };
-		B5DD447729BE582100BD748A /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		B5DD447929BE5A8C00BD748A /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
-		B5DD447B29BE64F200BD748A /* DeepDiveRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiveRulesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +124,8 @@
 		B509ECBC29A3C6670053D5E4 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				B58F20DB29BE8B6500623363 /* core */,
-				B589C66829B63B7200F81707 /* structs */,
+				B540FFA32B0D8D2400E9D313 /* Monster.swift */,
+				B540FFA12B0D8CC100E9D313 /* Song.swift */,
 				B589C64729B5780900F81707 /* MonsterMap.swift */,
 				B509ECBD29A3C68C0053D5E4 /* SongMap.swift */,
 				B503E4092A5C4D7A00CFAC6F /* DeepRockAVPlayer.swift */,
@@ -220,55 +180,8 @@
 		B55241FF28F8EDF400141B70 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				B5DD442D29BCDC6B00BD748A /* deepDive */,
-				B589C63F29B577D600F81707 /* monster */,
-				B552420228F9A0B600141B70 /* MusicTracksView.swift */,
-				B589C64429B577E800F81707 /* MonstersView.swift */,
-				B5DD442B29BCDBC200BD748A /* DeepDiveView.swift */,
 			);
 			path = views;
-			sourceTree = "<group>";
-		};
-		B5782DEF29C3B1B500A08E06 /* list */ = {
-			isa = PBXGroup;
-			children = (
-				B5DD442E29BCDC7B00BD748A /* DeepDiveListView.swift */,
-				B5DD447929BE5A8C00BD748A /* PlayerListView.swift */,
-				B561F86829C4CDA3000F93C7 /* PlayerListDetailView.swift */,
-			);
-			path = list;
-			sourceTree = "<group>";
-		};
-		B589C63F29B577D600F81707 /* monster */ = {
-			isa = PBXGroup;
-			children = (
-				B589C64129B577DF00F81707 /* MonsterDetailView.swift */,
-				B589C64029B577DF00F81707 /* MonsterListView.swift */,
-			);
-			path = monster;
-			sourceTree = "<group>";
-		};
-		B589C66829B63B7200F81707 /* structs */ = {
-			isa = PBXGroup;
-			children = (
-				B589C64629B5780900F81707 /* Monster.swift */,
-				B589C66629B63B6800F81707 /* Song.swift */,
-				B58F20DC29BF599700623363 /* Weapon.swift */,
-			);
-			path = structs;
-			sourceTree = "<group>";
-		};
-		B58F20DB29BE8B6500623363 /* core */ = {
-			isa = PBXGroup;
-			children = (
-				B561F85C29C4C7BD000F93C7 /* Card+CoreDataClass.swift */,
-				B561F85D29C4C7BD000F93C7 /* Card+CoreDataProperties.swift */,
-				B561F85E29C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift */,
-				B561F85F29C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift */,
-				B561F86029C4C7BD000F93C7 /* Player+CoreDataClass.swift */,
-				B561F86129C4C7BD000F93C7 /* Player+CoreDataProperties.swift */,
-			);
-			path = core;
 			sourceTree = "<group>";
 		};
 		B5C9777F28F8DD3700867ABB = {
@@ -292,12 +205,10 @@
 			isa = PBXGroup;
 			children = (
 				B555D61F29D5D44B007F20B3 /* Deep-Rock-Compansion-Info.plist */,
-				B5D9FCB229B7D58300A39BB0 /* Images */,
 				B509ECBC29A3C6670053D5E4 /* data */,
 				B524D1FB2946394C0093F438 /* songs */,
 				B55241FF28F8EDF400141B70 /* views */,
 				B5C9778B28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift */,
-				B5DD443529BCEECB00BD748A /* Persistance.swift */,
 				B5C9778D28F8DD3700867ABB /* ContentView.swift */,
 				B5C9778F28F8DD3900867ABB /* Assets.xcassets */,
 				B5C9779128F8DD3900867ABB /* Preview Content */,
@@ -312,25 +223,6 @@
 				B5C9779228F8DD3900867ABB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B5D9FCB229B7D58300A39BB0 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		B5DD442D29BCDC6B00BD748A /* deepDive */ = {
-			isa = PBXGroup;
-			children = (
-				B5782DEF29C3B1B500A08E06 /* list */,
-				B5DD445B29BD24F200BD748A /* DeepDiveAddView.swift */,
-				B5DD447729BE582100BD748A /* PlayerView.swift */,
-				B5DD447B29BE64F200BD748A /* DeepDiveRulesView.swift */,
-				B5BD1D2C29C3BE80007271CC /* DeepDiveDetailView.swift */,
-			);
-			path = deepDive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,34 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B561F86229C4C7BD000F93C7 /* Card+CoreDataClass.swift in Sources */,
-				B5DD447829BE582100BD748A /* PlayerView.swift in Sources */,
-				B589C64829B5780900F81707 /* Monster.swift in Sources */,
+				B540FFA42B0D8D2400E9D313 /* Monster.swift in Sources */,
+				B540FFA22B0D8CC100E9D313 /* Song.swift in Sources */,
 				B589C64929B5780900F81707 /* MonsterMap.swift in Sources */,
-				B561F86929C4CDA3000F93C7 /* PlayerListDetailView.swift in Sources */,
-				B561F86729C4C7BD000F93C7 /* Player+CoreDataProperties.swift in Sources */,
-				B5DD447C29BE64F200BD748A /* DeepDiveRulesView.swift in Sources */,
-				B561F86329C4C7BD000F93C7 /* Card+CoreDataProperties.swift in Sources */,
-				B561F86429C4C7BD000F93C7 /* DeepDive+CoreDataClass.swift in Sources */,
-				B561F86529C4C7BD000F93C7 /* DeepDive+CoreDataProperties.swift in Sources */,
-				B589C64329B577DF00F81707 /* MonsterDetailView.swift in Sources */,
-				B552420328F9A0B600141B70 /* MusicTracksView.swift in Sources */,
-				B589C66729B63B6800F81707 /* Song.swift in Sources */,
-				B561F86629C4C7BD000F93C7 /* Player+CoreDataClass.swift in Sources */,
 				B5C9778E28F8DD3700867ABB /* ContentView.swift in Sources */,
-				B589C64529B577E800F81707 /* MonstersView.swift in Sources */,
-				B5DD443629BCEECB00BD748A /* Persistance.swift in Sources */,
 				B509ECBE29A3C68C0053D5E4 /* SongMap.swift in Sources */,
 				B503E40A2A5C4D7A00CFAC6F /* DeepRockAVPlayer.swift in Sources */,
-				B5DD445C29BD24F200BD748A /* DeepDiveAddView.swift in Sources */,
-				B58F20DD29BF599700623363 /* Weapon.swift in Sources */,
-				B5DD442C29BCDBC200BD748A /* DeepDiveView.swift in Sources */,
 				B5C9778C28F8DD3700867ABB /* Deep_Rock_CompansionApp.swift in Sources */,
-				B5DD447A29BE5A8C00BD748A /* PlayerListView.swift in Sources */,
-				B5DD442F29BCDC7B00BD748A /* DeepDiveListView.swift in Sources */,
-				B589C64229B577DF00F81707 /* MonsterListView.swift in Sources */,
 				B5DD443429BCDD0400BD748A /* DeepDive_Model.xcdatamodeld in Sources */,
-				B5BD1D2D29C3BE80007271CC /* DeepDiveDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

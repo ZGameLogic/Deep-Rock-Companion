@@ -9,20 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            MusicTracksView().padding()
-                .tabItem({
-                    Label("Music Tracks", systemImage: "music.note.list")
-                }).tag(1)
-            MonstersView().padding()
-                .tabItem({
-                    Label("Monsterpedia", systemImage: "text.book.closed.fill")
-                }).tag(2)
-            DeepDiveView().padding()
-                .tabItem({
-                    Label("Deep Dives", systemImage: "bookmark.square")
-                }).tag(3)
-        }
+        Text("Hello world")
     }
 }
 
