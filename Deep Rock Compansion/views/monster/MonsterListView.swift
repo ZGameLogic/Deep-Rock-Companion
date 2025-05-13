@@ -17,9 +17,9 @@ struct MonsterListView: View {
                 VStack {
                     Image(monster.image).resizable().scaledToFit().frame(width: 100, height: 100)
                     if(monster.rockInStone){
-                        Text(monster.name).font(.headline).frame(width: 85, height: 50).foregroundColor(.orange)
+                        Text(monster.name).font(.headline).frame(width: 85, height: 50).foregroundColor(.orange).scaledToFit()
                     } else {
-                        Text(monster.name).font(.headline).frame(width: 85, height: 50)
+                        Text(monster.name).font(.headline).frame(width: 85, height: 50).scaledToFit()
                     }
                 }
                 VStack{
